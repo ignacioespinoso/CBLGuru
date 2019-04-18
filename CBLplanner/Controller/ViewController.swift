@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var nav_toolbar: UIToolbar!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

@@ -1,5 +1,5 @@
 //
-//  GuidingData+CoreDataProperties.swift
+//  GuidingData+CoreDataClass.swift
 //  CBLplanner
 //
 //  Created by Ignácio Espinoso Ribeiro on 23/04/19.
@@ -10,16 +10,16 @@
 import Foundation
 import CoreData
 
-
-extension GuidingData {
-
+class GuidingData: NSManagedObject {
+    
     @nonobjc public class func fetchRequest() -> NSFetchRequest<GuidingData> {
         return NSFetchRequest<GuidingData>(entityName: "GuidingData")
     }
-
-    @NSManaged public var guidingQuestion: String?
-    @NSManaged public var guidingResource: String?
-    @NSManaged public var guidingActivity: String?
-    @NSManaged public var belongs_to_project: Engage?
+    
+    @NSManaged public var activity: String?
+    @NSManaged public var project_id: UUID?
+    @NSManaged public var question: String?
+    @NSManaged public var resource: String?
+    @NSManaged public var belongs_to_project: ProjectData?
 
 }

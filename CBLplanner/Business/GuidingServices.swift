@@ -1,5 +1,5 @@
 //
-//  ProjectServices.swift
+//  GuidingServices.swift
 //  CBLplanner
 //
 //  Created by Ignácio Espinoso Ribeiro on 23/04/19.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-class ProjectServices {
+class GuidingServices {
     
-    /// Function responsible for creating a project
+    /// Function responsible for creating a guiding line
     /// - parameters:
     ///     - project: Project to be saved
     ///     - completion: closure to be executed at the end of this method
     /// - throws: if an error occurs during saving an object into database (Errors.DatabaseFailure)
-    static func createProject(project: ProjectData, _ completion: ((_ error: Error?) -> Void)?) {
+    static func createProject(guiding: GuidingData, _ completion: ((_ error: Error?) -> Void)?) {
         // block to be executed in background
         let blockForExecutionInBackground: BlockOperation = BlockOperation(block: {
             // error to be returned in case of failure
@@ -23,7 +23,7 @@ class ProjectServices {
             
             do {
                 // save information
-                try ProjectDAO.create(project)
+                try GuidingDAO.create(guiding)
             }
             catch let error {
                 raisedError = error
@@ -42,12 +42,12 @@ class ProjectServices {
         QueueManager.sharedInstance.executeBlock(blockForExecutionInBackground, queueType: QueueManager.QueueType.serial)
     }
     
-    /// Function responsible for updating a project
+    /// Function responsible for updating a guiding line
     /// - parameters:
-    ///     - project: Project to be updated
+    ///     - guiding: Guiding line to be updated
     ///     - completion: closure to be executed at the end of this method
     /// - throws: if an error occurs during saving an object into database (Errors.DatabaseFailure)
-    static func updateProject(project: ProjectData, _ completion: ((_ error: Error?) -> Void)?) {
+    static func updateProject(guiding: GuidingData, _ completion: ((_ error: Error?) -> Void)?) {
         // block to be executed in background
         let blockForExecutionInBackground: BlockOperation = BlockOperation(block: {
             // error to be returned in case of failure
@@ -55,7 +55,7 @@ class ProjectServices {
             
             do {
                 // save information
-                try ProjectDAO.update(project)
+                try GuidingDAO.update(guiding)
             }
             catch let error {
                 raisedError = error
@@ -74,12 +74,12 @@ class ProjectServices {
         QueueManager.sharedInstance.executeBlock(blockForExecutionInBackground, queueType: QueueManager.QueueType.serial)
     }
     
-    /// Function responsible for deleting a project
+    /// Function responsible for deleting a guiding line
     /// - parameters:
     ///     - project: Project to be deleted
     ///     - completion: closure to be executed at the end of this method
     /// - throws: if an error occurs during saving an object into database (Errors.DatabaseFailure)
-    static func deleteProject(project: ProjectData, _ completion: ((_ error: Error?) -> Void)?) {
+    static func deleteProject(guiding: GuidingData, _ completion: ((_ error: Error?) -> Void)?) {
         // block to be executed in background
         let blockForExecutionInBackground: BlockOperation = BlockOperation(block: {
             // error to be returned in case of failure
@@ -87,7 +87,7 @@ class ProjectServices {
             
             do {
                 // save information
-                try ProjectDAO.delete(project)
+                try GuidingDAO.delete(guiding)
             }
             catch let error {
                 raisedError = error
@@ -106,20 +106,20 @@ class ProjectServices {
         QueueManager.sharedInstance.executeBlock(blockForExecutionInBackground, queueType: QueueManager.QueueType.serial)
     }
     
-    /// Function responsible for getting all projects
+    /// Function responsible for getting all guiding data
     /// - parameters:
     ///     - completion: closure to be executed at the end of this method
     /// - throws: if an error occurs during getting an object from database (Errors.DatabaseFailure)
-    static func getAllProjects(_ completion: ((_ error: Error?, _ projects: [ProjectData]?) -> Void)?) {
+    static func getAllProjects(_ completion: ((_ error: Error?, _ guidingData: [GuidingData]?) -> Void)?) {
         // block to be executed in background
         let blockForExecutionInBackground: BlockOperation = BlockOperation(block: {
             // error to be returned in case of failure
             var raisedError: Error? = nil
-            var projects: [ProjectData]?
+            var guidingData: [GuidingData]?
             
             do {
                 // save information
-                projects = try ProjectDAO.findAll()
+                guidingData = try GuidingDAO.findAll()
             }
             catch let error {
                 raisedError = error
@@ -127,7 +127,7 @@ class ProjectServices {
             
             // completion block execution
             if (completion != nil) {
-                let blockForExecutionInMain: BlockOperation = BlockOperation(block: {completion!(raisedError, projects)})
+                let blockForExecutionInMain: BlockOperation = BlockOperation(block: {completion!(raisedError, guidingData)})
                 
                 // execute block in main
                 QueueManager.sharedInstance.executeBlock(blockForExecutionInMain, queueType: QueueManager.QueueType.main)

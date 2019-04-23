@@ -7,6 +7,13 @@
 //
 
 import UIKit
+import os.log
+
+struct PropertyKey {
+    static let bigIdea = "bigIdea"
+    static let essentialQuestion = "essentialQuestion"
+    static let challenge = "challenge"
+}
 
 class EngageData: NSObject {
     public private(set) var bigIdea: String
@@ -24,10 +31,11 @@ class EngageData: NSObject {
     }
     
     public func setEssentialQuestion(newEssentialQuestion: String) {
-        self.bigIdea = newEssentialQuestion
+        self.essentialQuestion = newEssentialQuestion
     }
     
     public func setChallenge(newChallenge: String) {
-        self.bigIdea = newChallenge
+        self.challenge = newChallenge
     }
+    
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eUO-h2-R73">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--EngageController-->
+        <!--BigIdeaController-->
         <scene sceneID="sFw-ny-bjv">
             <objects>
-                <viewController storyboardIdentifier="BigIdea" title="EngageController" id="dnW-Yz-Kwy" customClass="EngageController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BigIdea" title="BigIdeaController" id="dnW-Yz-Kwy" customClass="bigIdeaController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="BigIdea" id="aaw-59-JgF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,7 +61,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="r12-7R-6AP" kind="show" id="jRV-iu-Uf4"/>
+                                    <action selector="tapCBLNudge:" destination="dnW-Yz-Kwy" eventType="touchUpInside" id="jpG-8F-j34"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v4W-5T-QpL">
@@ -87,7 +87,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="saveBigIdea:" destination="dnW-Yz-Kwy" eventType="touchUpInside" id="UJO-UL-dak"/>
+                                    <action selector="saveBigIdea:" destination="dnW-Yz-Kwy" eventType="touchUpInside" id="v8j-fP-TSo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -95,33 +95,17 @@
                         <viewLayoutGuide key="safeArea" id="RcD-De-2p3"/>
                     </view>
                     <connections>
-                        <outlet property="bigIdea" destination="v4W-5T-QpL" id="YUi-oa-7Cq"/>
-                        <outlet property="saveBigIdeaButton" destination="p6I-mz-sCf" id="BHm-Ok-U2J"/>
+                        <outlet property="bigIdea" destination="v4W-5T-QpL" id="Z9U-FR-jXH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJM-56-Gzn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="666.66666666666674" y="20.758928571428569"/>
         </scene>
-        <!--AppStoreController-->
-        <scene sceneID="rAM-cf-Iqz">
-            <objects>
-                <viewController title="AppStoreController" id="r12-7R-6AP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="83O-z4-hRE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Aob-xb-K97"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PCd-WQ-vHF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1619" y="773"/>
-        </scene>
-        <!--EngageController-->
+        <!--EssentialQuestionController-->
         <scene sceneID="Hmn-yI-RAg">
             <objects>
-                <viewController storyboardIdentifier="EssentialQuestion" title="EngageController" id="Y5Y-2r-Nmh" customClass="EngageController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EssentialQuestion" title="EssentialQuestionController" id="Y5Y-2r-Nmh" customClass="EssentialQuestionController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t5r-D9-s8l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,7 +161,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="r12-7R-6AP" kind="show" id="YIc-Ft-MKp"/>
+                                    <action selector="tapCBLNudge:" destination="Y5Y-2r-Nmh" eventType="touchUpInside" id="cb0-T1-uDU"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fTq-bD-qk6">
@@ -196,7 +180,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="saveEssentialQuestion:" destination="Y5Y-2r-Nmh" eventType="touchUpInside" id="bI8-aZ-Vuk"/>
+                                    <action selector="saveEssentialQuestion:" destination="Y5Y-2r-Nmh" eventType="touchUpInside" id="H1A-y0-GX8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -204,18 +188,17 @@
                         <viewLayoutGuide key="safeArea" id="Rjl-3E-08m"/>
                     </view>
                     <connections>
-                        <outlet property="essentialQuestion" destination="fTq-bD-qk6" id="s3T-HB-1yL"/>
-                        <outlet property="saveEssentialQuestionButton" destination="TVI-Gm-HLT" id="4vm-zr-zAJ"/>
+                        <outlet property="essentialQuestion" destination="fTq-bD-qk6" id="Y6E-w8-6J2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dEC-Dy-s5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1618.840579710145" y="20.758928571428569"/>
         </scene>
-        <!--EngageController-->
+        <!--ChallengeController-->
         <scene sceneID="hO2-Ee-aB1">
             <objects>
-                <viewController storyboardIdentifier="Challenge" title="EngageController" id="eUO-h2-R73" customClass="EngageController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Challenge" title="ChallengeController" id="eUO-h2-R73" customClass="ChallengeController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="Challenge" id="507-IW-rjV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -257,7 +240,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="r12-7R-6AP" kind="show" id="YtG-CP-Apw"/>
+                                    <action selector="tapCBLNudge:" destination="eUO-h2-R73" eventType="touchUpInside" id="s4k-7T-g6o"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbB-U8-t6W">
@@ -269,7 +252,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="saveChallenge:" destination="eUO-h2-R73" eventType="touchUpInside" id="kiS-6q-CuX"/>
+                                    <action selector="saveChallenge:" destination="eUO-h2-R73" eventType="touchUpInside" id="pkk-kz-GDR"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B45-1a-aGN">
@@ -297,17 +280,10 @@
                         <color key="backgroundColor" red="0.83322399854660034" green="0.36683839559555054" blue="0.21563142538070679" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="jWz-3T-7MX"/>
                     </view>
-                    <connections>
-                        <outlet property="challenge" destination="B45-1a-aGN" id="jMW-LC-sN4"/>
-                        <outlet property="saveChallengeButton" destination="BbB-U8-t6W" id="jhs-Ik-o8h"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U69-ZT-vGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2593" y="21"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="YtG-CP-Apw"/>
-    </inferredMetricsTieBreakers>
 </document>

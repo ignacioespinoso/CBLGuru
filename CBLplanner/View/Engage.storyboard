@@ -280,6 +280,9 @@
                         <color key="backgroundColor" red="0.83322399854660034" green="0.36683839559555054" blue="0.21563142538070679" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="jWz-3T-7MX"/>
                     </view>
+                    <connections>
+                        <outlet property="challenge" destination="B45-1a-aGN" id="f2x-XG-p4K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U69-ZT-vGk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		801A4243226F562A00651347 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801A4242226F562A00651347 /* DAO.swift */; };
+		801A4245226F563F00651347 /* ProjectDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801A4244226F563F00651347 /* ProjectDAO.swift */; };
+		801A4254226F629900651347 /* ProjectPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 801A4252226F629900651347 /* ProjectPlanner.xcdatamodeld */; };
+		801A4259226F63C700651347 /* GuidingData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801A4255226F63C700651347 /* GuidingData+CoreDataClass.swift */; };
+		801A425A226F63C700651347 /* GuidingData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801A4256226F63C700651347 /* GuidingData+CoreDataProperties.swift */; };
+		801A425B226F63C700651347 /* Project+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801A4257226F63C700651347 /* Project+CoreDataClass.swift */; };
+		801A425C226F63C700651347 /* Project+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801A4258226F63C700651347 /* Project+CoreDataProperties.swift */; };
 		803C81C9226F3AEE00704B41 /* EssentialQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C81C8226F3AEE00704B41 /* EssentialQuestionController.swift */; };
 		803C81CB226F3B0900704B41 /* ChallengeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C81CA226F3B0900704B41 /* ChallengeController.swift */; };
 		803C81CD226F3B6600704B41 /* bigIdeaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C81CC226F3B6600704B41 /* bigIdeaController.swift */; };
 		803C81D2226F483100704B41 /* QueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C81D1226F483100704B41 /* QueueManager.swift */; };
 		803C81D4226F488500704B41 /* ProjectServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C81D3226F488500704B41 /* ProjectServices.swift */; };
-		803C81DA226F490300704B41 /* ProjectPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 803C81D8226F490300704B41 /* ProjectPlanner.xcdatamodeld */; };
 		803C81DD226F49E100704B41 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C81DC226F49E100704B41 /* CoreDataManager.swift */; };
 		80C47F752268DBE3009A7EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C47F742268DBE3009A7EC5 /* AppDelegate.swift */; };
 		80C47F772268DBE3009A7EC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C47F762268DBE3009A7EC5 /* ViewController.swift */; };
@@ -21,17 +27,22 @@
 		80C47F7F2268DBE5009A7EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C47F7D2268DBE5009A7EC5 /* LaunchScreen.storyboard */; };
 		80DCE986226DFA7700597F37 /* Engage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80DCE985226DFA7700597F37 /* Engage.storyboard */; };
 		80DCE988226DFD0100597F37 /* EngageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DCE987226DFD0100597F37 /* EngageData.swift */; };
-		80F5A5982268E593009AEB66 /* ProjectData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5A5972268E593009AEB66 /* ProjectData.swift */; };
 		80F5A59A2268EA32009AEB66 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F5A5992268EA32009AEB66 /* Settings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		801A4242226F562A00651347 /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
+		801A4244226F563F00651347 /* ProjectDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDAO.swift; sourceTree = "<group>"; };
+		801A4253226F629900651347 /* ProjectPlanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjectPlanner.xcdatamodel; sourceTree = "<group>"; };
+		801A4255226F63C700651347 /* GuidingData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GuidingData+CoreDataClass.swift"; path = "../GuidingData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		801A4256226F63C700651347 /* GuidingData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GuidingData+CoreDataProperties.swift"; path = "../GuidingData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		801A4257226F63C700651347 /* Project+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project+CoreDataClass.swift"; sourceTree = "<group>"; };
+		801A4258226F63C700651347 /* Project+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		803C81C8226F3AEE00704B41 /* EssentialQuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialQuestionController.swift; sourceTree = "<group>"; };
 		803C81CA226F3B0900704B41 /* ChallengeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeController.swift; sourceTree = "<group>"; };
 		803C81CC226F3B6600704B41 /* bigIdeaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bigIdeaController.swift; sourceTree = "<group>"; };
 		803C81D1226F483100704B41 /* QueueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueManager.swift; sourceTree = "<group>"; };
 		803C81D3226F488500704B41 /* ProjectServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectServices.swift; sourceTree = "<group>"; };
-		803C81D9226F490300704B41 /* ProjectPlanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjectPlanner.xcdatamodel; sourceTree = "<group>"; };
 		803C81DC226F49E100704B41 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		80C47F712268DBE3009A7EC5 /* CBLplanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBLplanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C47F742268DBE3009A7EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +53,6 @@
 		80C47F802268DBE5009A7EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80DCE985226DFA7700597F37 /* Engage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Engage.storyboard; sourceTree = "<group>"; };
 		80DCE987226DFD0100597F37 /* EngageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngageData.swift; sourceTree = "<group>"; };
-		80F5A5972268E593009AEB66 /* ProjectData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectData.swift; sourceTree = "<group>"; };
 		80F5A5992268EA32009AEB66 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,8 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				803C81DB226F49BC00704B41 /* DAO */,
-				803C81D8226F490300704B41 /* ProjectPlanner.xcdatamodeld */,
 				803C81DC226F49E100704B41 /* CoreDataManager.swift */,
+				801A4252226F629900651347 /* ProjectPlanner.xcdatamodeld */,
 			);
 			path = Persistance;
 			sourceTree = "<group>";
@@ -86,6 +96,8 @@
 		803C81DB226F49BC00704B41 /* DAO */ = {
 			isa = PBXGroup;
 			children = (
+				801A4242226F562A00651347 /* DAO.swift */,
+				801A4244226F563F00651347 /* ProjectDAO.swift */,
 			);
 			path = DAO;
 			sourceTree = "<group>";
@@ -123,8 +135,11 @@
 		80C47F862268DC82009A7EC5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				801A4255226F63C700651347 /* GuidingData+CoreDataClass.swift */,
+				801A4256226F63C700651347 /* GuidingData+CoreDataProperties.swift */,
+				801A4257226F63C700651347 /* Project+CoreDataClass.swift */,
+				801A4258226F63C700651347 /* Project+CoreDataProperties.swift */,
 				80C47F742268DBE3009A7EC5 /* AppDelegate.swift */,
-				80F5A5972268E593009AEB66 /* ProjectData.swift */,
 				80DCE987226DFD0100597F37 /* EngageData.swift */,
 			);
 			path = Model;
@@ -226,14 +241,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				801A4243226F562A00651347 /* DAO.swift in Sources */,
+				801A425B226F63C700651347 /* Project+CoreDataClass.swift in Sources */,
 				803C81D2226F483100704B41 /* QueueManager.swift in Sources */,
 				803C81CB226F3B0900704B41 /* ChallengeController.swift in Sources */,
 				803C81C9226F3AEE00704B41 /* EssentialQuestionController.swift in Sources */,
-				803C81DA226F490300704B41 /* ProjectPlanner.xcdatamodeld in Sources */,
 				803C81CD226F3B6600704B41 /* bigIdeaController.swift in Sources */,
+				801A4259226F63C700651347 /* GuidingData+CoreDataClass.swift in Sources */,
 				803C81DD226F49E100704B41 /* CoreDataManager.swift in Sources */,
 				80DCE988226DFD0100597F37 /* EngageData.swift in Sources */,
-				80F5A5982268E593009AEB66 /* ProjectData.swift in Sources */,
+				801A4245226F563F00651347 /* ProjectDAO.swift in Sources */,
+				801A4254226F629900651347 /* ProjectPlanner.xcdatamodeld in Sources */,
+				801A425C226F63C700651347 /* Project+CoreDataProperties.swift in Sources */,
+				801A425A226F63C700651347 /* GuidingData+CoreDataProperties.swift in Sources */,
 				80C47F772268DBE3009A7EC5 /* ViewController.swift in Sources */,
 				80C47F752268DBE3009A7EC5 /* AppDelegate.swift in Sources */,
 				803C81D4226F488500704B41 /* ProjectServices.swift in Sources */,
@@ -436,12 +456,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		803C81D8226F490300704B41 /* ProjectPlanner.xcdatamodeld */ = {
+		801A4252226F629900651347 /* ProjectPlanner.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				803C81D9226F490300704B41 /* ProjectPlanner.xcdatamodel */,
+				801A4253226F629900651347 /* ProjectPlanner.xcdatamodel */,
 			);
-			currentVersion = 803C81D9226F490300704B41 /* ProjectPlanner.xcdatamodel */;
+			currentVersion = 801A4253226F629900651347 /* ProjectPlanner.xcdatamodel */;
 			path = ProjectPlanner.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

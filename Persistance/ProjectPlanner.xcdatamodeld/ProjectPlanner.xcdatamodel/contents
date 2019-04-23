@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18E226" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Engage" representedClassName=".Engage" syncable="YES">
+    <entity name="GuidingData" representedClassName="GuidingData" syncable="YES" codeGenerationType="class">
+        <attribute name="activity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="project_id" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="question" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="resource" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="belongs_to_project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="has_guiding_data" inverseEntity="Project" syncable="YES"/>
+    </entity>
+    <entity name="Project" representedClassName="Project" syncable="YES" codeGenerationType="class">
         <attribute name="bigIdea" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="challenge" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="essentialQuestion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fluxogram_pic" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="investigate_synthesis" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="has_guiding_data" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GuidingData" inverseName="belongs_to_project" inverseEntity="GuidingData" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Engage" positionX="-45" positionY="0" width="128" height="90"/>
+        <element name="Project" positionX="-36" positionY="9" width="128" height="150"/>
+        <element name="GuidingData" positionX="0" positionY="90" width="128" height="120"/>
     </elements>
 </model>

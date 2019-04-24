@@ -79,4 +79,25 @@ class ProjectDAO: DAO {
         
         return projectList
     }
+    
+    /// Method responsible for retrieving first created project from database
+    /// - returns: the first created project from database
+    /// - throws: if an error occurs during getting an object from database (Errors.DatabaseFailure)
+    static func findFirst() throws -> ProjectData {
+        // list of projects to be returned
+        var projectList:[ProjectData]
+        
+        do {
+            // creating fetch request
+            let request:NSFetchRequest<ProjectData> = fetchRequest()
+            
+            // perform search
+            projectList = try CoreDataManager.sharedInstance.persistentContainer.viewContext.fetch(request)
+        }
+        catch {
+            throw Errors.DatabaseFailure
+        }
+        
+        return projectList[0]
+    }
 }

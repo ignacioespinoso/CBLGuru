@@ -98,6 +98,11 @@ class ProjectDAO: DAO {
             throw Errors.DatabaseFailure
         }
         
-        return projectList[0]
+        if projectList.count > 0 {
+            return projectList[0]
+        } else {
+            return ProjectData()
+        }
+        
     }
 }

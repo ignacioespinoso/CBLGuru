@@ -7,7 +7,7 @@
         <attribute name="resource" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="belongs_to_project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProjectData" inverseName="has_guiding_data" inverseEntity="ProjectData" syncable="YES"/>
     </entity>
-    <entity name="ProjectData" representedClassName="ProjectData" syncable="YES">
+    <entity name="ProjectData" representedClassName=".ProjectData" syncable="YES">
         <attribute name="bigIdea" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="challenge" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="essentialQuestion" optional="YES" attributeType="String" syncable="YES"/>

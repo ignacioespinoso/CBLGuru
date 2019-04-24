@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eUO-h2-R73">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MRQ-Ta-2iJ">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,6 +10,67 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="5TV-a3-1MO">
+            <objects>
+                <viewController id="r13-sC-eRG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Za2-2W-OlE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eg5-hr-4SL">
+                                <rect key="frame" x="118" y="164" width="179" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Big Idea"/>
+                                <connections>
+                                    <segue destination="dnW-Yz-Kwy" kind="show" id="zlh-4T-4GX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ZS-eX-YpY">
+                                <rect key="frame" x="85" y="421" width="286" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Essential Question"/>
+                                <connections>
+                                    <segue destination="Y5Y-2r-Nmh" kind="show" id="1LX-Vx-5aA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Psr-LZ-adQ">
+                                <rect key="frame" x="118" y="646" width="179" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Challenge"/>
+                                <connections>
+                                    <segue destination="eUO-h2-R73" kind="show" id="AAe-KD-l9p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="B4p-nb-PNR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="17q-eW-jLX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cuH-ar-k3h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1619" y="-760"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nLp-AK-Q6K">
+            <objects>
+                <navigationController id="MRQ-Ta-2iJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cec-yg-evd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="r13-sC-eRG" kind="relationship" relationship="rootViewController" id="yCK-md-7Or"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2aK-1C-XlT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1619" y="-1486"/>
+        </scene>
         <!--BigIdeaController-->
         <scene sceneID="sFw-ny-bjv">
             <objects>
@@ -87,7 +148,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="saveBigIdea:" destination="dnW-Yz-Kwy" eventType="touchUpInside" id="v8j-fP-TSo"/>
+                                    <action selector="saveProject:" destination="dnW-Yz-Kwy" eventType="touchUpInside" id="VW6-IJ-srJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -180,7 +241,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="saveEssentialQuestion:" destination="Y5Y-2r-Nmh" eventType="touchUpInside" id="H1A-y0-GX8"/>
+                                    <action selector="saveProject:" destination="Y5Y-2r-Nmh" eventType="touchUpInside" id="58W-X4-0Oa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -252,7 +313,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="saveChallenge:" destination="eUO-h2-R73" eventType="touchUpInside" id="pkk-kz-GDR"/>
+                                    <action selector="saveProject:" destination="eUO-h2-R73" eventType="touchUpInside" id="0Q5-Bh-QWU"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B45-1a-aGN">

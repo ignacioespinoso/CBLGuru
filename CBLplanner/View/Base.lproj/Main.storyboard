@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Storyboard Reference-->
+        <!--Act-->
         <scene sceneID="hqP-CR-MAP">
             <objects>
-                <viewControllerPlaceholder id="MH9-Ky-JaM" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Act" referencedIdentifier="Act" id="MH9-Ky-JaM" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fge-pC-Cr2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1554" y="-1020"/>

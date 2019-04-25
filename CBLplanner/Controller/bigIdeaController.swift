@@ -40,13 +40,18 @@ class bigIdeaController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
+        
+        // Sets navigation bar according to this step corresponding color
+        let nav = self.navigationController?.navigationBar
+        
+        nav?.tintColor = UIColor.white
+        nav?.prefersLargeTitles = true
+        nav?.backgroundColor = UIColor(red:0.89, green:0.33, blue:0.15, alpha:1.0)
+        nav?.barTintColor = UIColor(red:0.89, green:0.33, blue:0.15, alpha:1.0)
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        nav?.largeTitleTextAttributes = textAttributes
     }
-    
-//    @IBAction func saveBigIdea(_ sender: UIButton) {
-//        if let value = bigIdea.text {
-//            self.engageData.setBigIdea(newBigIdea: value)
-//        }
-//    }
     
     @IBAction func tapCBLNudge(_ sender: UIButton) {
         let url = URL(string: "itms-apps://itunes.apple.com/us/app/cbl-nudge/id1403826548?mt=8")!
@@ -73,8 +78,6 @@ class bigIdeaController: UIViewController {
             // initialize a new alarm get information from UI
             self.project = ProjectData()
             self.project!.bigIdea = self.bigIdea.text!
-            
-//            DO I NEED TO INITIALIZE OTHER ELEMENTS AS WELL?
             
             // create new alarm
             ProjectServices.createProject(project: self.project!) { error in

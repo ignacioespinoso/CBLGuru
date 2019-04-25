@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		15413CC82270A02E00C42F71 /* ListQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15413CC72270A02E00C42F71 /* ListQuestionsViewController.swift */; };
+		15413CCC2270B64100C42F71 /* GuidingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15413CCB2270B64100C42F71 /* GuidingTableViewCell.swift */; };
 		1543A854226DFD7B008E4172 /* Investigate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1543A853226DFD7B008E4172 /* Investigate.storyboard */; };
-		1543A856226E0CEC008E4172 /* GuidingQustionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1543A855226E0CEC008E4172 /* GuidingQustionsViewController.swift */; };
-		15AE6A3C226F35EA00E58919 /* MovingGQuestionsCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE6A3B226F35EA00E58919 /* MovingGQuestionsCellTableViewCell.swift */; };
-		15AE6A3E226F680400E58919 /* SythesisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE6A3D226F680400E58919 /* SythesisViewController.swift */; };
+		1543A856226E0CEC008E4172 /* AddGuidingQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1543A855226E0CEC008E4172 /* AddGuidingQuestionsViewController.swift */; };
+		155EB9DE2272336500BDA61B /* LinkToCBLNudge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155EB9DD2272336500BDA61B /* LinkToCBLNudge.storyboard */; };
+		155EB9E02272376700BDA61B /* LinkToNudgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155EB9DF2272376700BDA61B /* LinkToNudgeViewController.swift */; };
+		15AE6A3E226F680400E58919 /* SynthesisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE6A3D226F680400E58919 /* SynthesisViewController.swift */; };
 		801A4243226F562A00651347 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801A4242226F562A00651347 /* DAO.swift */; };
 		801A4245226F563F00651347 /* ProjectDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801A4244226F563F00651347 /* ProjectDAO.swift */; };
 		801A4254226F629900651347 /* ProjectPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 801A4252226F629900651347 /* ProjectPlanner.xcdatamodeld */; };
@@ -41,10 +43,12 @@
 
 /* Begin PBXFileReference section */
 		15413CC72270A02E00C42F71 /* ListQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListQuestionsViewController.swift; sourceTree = "<group>"; };
+		15413CCB2270B64100C42F71 /* GuidingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidingTableViewCell.swift; sourceTree = "<group>"; };
 		1543A853226DFD7B008E4172 /* Investigate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Investigate.storyboard; sourceTree = "<group>"; };
-		1543A855226E0CEC008E4172 /* GuidingQustionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidingQustionsViewController.swift; sourceTree = "<group>"; };
-		15AE6A3B226F35EA00E58919 /* MovingGQuestionsCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovingGQuestionsCellTableViewCell.swift; sourceTree = "<group>"; };
-		15AE6A3D226F680400E58919 /* SythesisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SythesisViewController.swift; sourceTree = "<group>"; };
+		1543A855226E0CEC008E4172 /* AddGuidingQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGuidingQuestionsViewController.swift; sourceTree = "<group>"; };
+		155EB9DD2272336500BDA61B /* LinkToCBLNudge.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LinkToCBLNudge.storyboard; sourceTree = "<group>"; };
+		155EB9DF2272376700BDA61B /* LinkToNudgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkToNudgeViewController.swift; sourceTree = "<group>"; };
+		15AE6A3D226F680400E58919 /* SynthesisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthesisViewController.swift; sourceTree = "<group>"; };
 		801A4242226F562A00651347 /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
 		801A4244226F563F00651347 /* ProjectDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDAO.swift; sourceTree = "<group>"; };
 		801A4253226F629900651347 /* ProjectPlanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjectPlanner.xcdatamodel; sourceTree = "<group>"; };
@@ -165,9 +169,6 @@
 		80C47F862268DC82009A7EC5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				80C47F742268DBE3009A7EC5 /* AppDelegate.swift */,
-				15AE6A3B226F35EA00E58919 /* MovingGQuestionsCellTableViewCell.swift */,
-				80F5A5972268E593009AEB66 /* ProjectData.swift */,
 				80A8C81D226FC58C00B8566C /* Enumerations */,
 				80A8C819226FBEFD00B8566C /* GuidingData.swift */,
 				801A4257226F63C700651347 /* ProjectData.swift */,
@@ -185,6 +186,7 @@
 				80F5A5992268EA32009AEB66 /* Settings.storyboard */,
 				1543A853226DFD7B008E4172 /* Investigate.storyboard */,
 				80DCE985226DFA7700597F37 /* Engage.storyboard */,
+				155EB9DD2272336500BDA61B /* LinkToCBLNudge.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,14 +195,16 @@
 			isa = PBXGroup;
 			children = (
 				80C47F762268DBE3009A7EC5 /* ViewController.swift */,
-				1543A855226E0CEC008E4172 /* GuidingQustionsViewController.swift */,
-				15AE6A3D226F680400E58919 /* SythesisViewController.swift */,
+				1543A855226E0CEC008E4172 /* AddGuidingQuestionsViewController.swift */,
+				15AE6A3D226F680400E58919 /* SynthesisViewController.swift */,
 				15413CC72270A02E00C42F71 /* ListQuestionsViewController.swift */,
 				803C81C8226F3AEE00704B41 /* EssentialQuestionController.swift */,
 				803C81CA226F3B0900704B41 /* ChallengeController.swift */,
 				803C81CC226F3B6600704B41 /* bigIdeaController.swift */,
 				80714C062271F587007FCB10 /* ProjectSettingsController.swift */,
 				80F1B467227234D8009D4015 /* Common.swift */,
+				15413CCB2270B64100C42F71 /* GuidingTableViewCell.swift */,
+				155EB9DF2272376700BDA61B /* LinkToNudgeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -268,6 +272,7 @@
 				80DCE986226DFA7700597F37 /* Engage.storyboard in Resources */,
 				80C47F7A2268DBE3009A7EC5 /* Main.storyboard in Resources */,
 				80F5A59A2268EA32009AEB66 /* Settings.storyboard in Resources */,
+				155EB9DE2272336500BDA61B /* LinkToCBLNudge.storyboard in Resources */,
 				1543A854226DFD7B008E4172 /* Investigate.storyboard in Resources */,
 				80A8C818226FBB8700B8566C /* Default-568h@2x.png in Resources */,
 			);
@@ -280,13 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1543A856226E0CEC008E4172 /* GuidingQustionsViewController.swift in Sources */,
-				80F5A5982268E593009AEB66 /* ProjectData.swift in Sources */,
-				15AE6A3E226F680400E58919 /* SythesisViewController.swift in Sources */,
-				15AE6A3C226F35EA00E58919 /* MovingGQuestionsCellTableViewCell.swift in Sources */,
+				1543A856226E0CEC008E4172 /* AddGuidingQuestionsViewController.swift in Sources */,
+				15AE6A3E226F680400E58919 /* SynthesisViewController.swift in Sources */,
 				80C47F772268DBE3009A7EC5 /* ViewController.swift in Sources */,
 				80C47F752268DBE3009A7EC5 /* AppDelegate.swift in Sources */,
 				15413CC82270A02E00C42F71 /* ListQuestionsViewController.swift in Sources */,
+				155EB9E02272376700BDA61B /* LinkToNudgeViewController.swift in Sources */,
 				801A4243226F562A00651347 /* DAO.swift in Sources */,
 				80A8C81F226FC59E00B8566C /* Errors.swift in Sources */,
 				80714C072271F587007FCB10 /* ProjectSettingsController.swift in Sources */,
@@ -306,6 +310,7 @@
 				80C47F752268DBE3009A7EC5 /* AppDelegate.swift in Sources */,
 				803C81D4226F488500704B41 /* ProjectServices.swift in Sources */,
 				80A8C823226FC82E00B8566C /* GuidingServices.swift in Sources */,
+				15413CCC2270B64100C42F71 /* GuidingTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

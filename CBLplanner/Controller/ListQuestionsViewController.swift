@@ -8,56 +8,121 @@
 
 import UIKit
 
-class ListQuestionsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ListQuestionsViewController: UIViewController {
+    fileprivate var guidings: [GuidingData] = []
     @IBOutlet weak var table: UITableView!
-    let guidingCell = "GuidingCells"
-    public var guidingQuestionList : [(gQuestion : String, gResource : String, gActivity : String)] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // 1
         
-        self.table.reloadData()
+        let nav = self.navigationController?.navigationBar
         
-        self.table.tableFooterView = UIView()
-        
-        table.delegate = self
-        table.dataSource = self
+        // 2
+        nav?.tintColor = UIColor.white
+        nav?.prefersLargeTitles = true
+        nav?.backgroundColor = UIColor(red:0.89, green:0.33, blue:0.15, alpha:1.0)
+        nav?.barTintColor = UIColor(red:0.67, green:0.81, blue:0.11, alpha:1.0)
+        //        nav?.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        nav?.largeTitleTextAttributes = textAttributes
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        // call super
+        super.viewWillAppear(animated)
+        
+        // get all seasons
+        GuidingServices.getAllProjects { (error, guidings) in
+            if (error == nil) {
+                // assign season list
+                self.guidings = guidings!
+                
+                // reload table view with season information
+                DispatchQueue.main.async {
+                    self.table.reloadData()
+                }
+            }
+            else {
+                // display error here because it was not possible to load season list
+                print("Error retrieving content")
+            }
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // check for the correct transition
+        if (segue.identifier == "addOrEditGuiding") {
+            // cast destination controller and setup initial data
+            let destinationViewController:AddGuidingQuestionsViewController = segue.destination as! AddGuidingQuestionsViewController
+            destinationViewController.navigationItem.title = (sender is GuidingData) ? "Edit Guiding" : "Add Guiding"
+            destinationViewController.guiding = sender as? GuidingData
+        }
+    }
+}
+    
+extension ListQuestionsViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.guidingQuestionList.count
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You tapped cell number \(indexPath.row).")
-        let cell : UITableViewCell = tableView.cellForRow(at: indexPath)!
-        
-        if let guidingCell = cell as? MovingGQuestionsCell {
-            print(guidingCell.guidingResource.text!)
-            guidingCell.guidingResource.sizeToFit()
-            guidingCell.onClick()
-            tableView.reloadRows(at: [indexPath], with: .automatic)
-        }
+        return self.guidings.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // create a new cell if needed or reuse an old one
-        let cell : UITableViewCell =  self.table.dequeueReusableCell(withIdentifier: guidingCell,
-                                                                     for: indexPath)
+        // get a new cell
+        let cell:GuidingTableViewCell = table.dequeueReusableCell(withIdentifier: "GuidingCells", for: indexPath) as! GuidingTableViewCell
         
-        // set the text from the data model
-        let guidingList = self.guidingQuestionList
-        
-        if let guidingCell = cell as? MovingGQuestionsCell {
-            guidingCell.guidingQuestion.text = guidingList[indexPath.row].0
-            guidingCell.guidingResource.text = guidingList[indexPath.row].1
-            guidingCell.guidingActivity.text = guidingList[indexPath.row].2
+        // get the season data to be displayed
+        if let guiding:GuidingData = self.guidings[indexPath.row] {
+            // fill cell with extracted information
+            cell.questionLabel.text = guiding.question
+            cell.resourceLabel.text = guiding.resource
+            cell.activityLabel.text = guiding.activity
         }
+        
+        
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "addOrEditGuiding", sender: self.guidings[indexPath.row])
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            // get season that will be deleted
+            let guiding:GuidingData = self.guidings[indexPath.row]
+            
+            // remove season from database
+            GuidingServices.deleteProject(guiding:guiding) { (error) in
+                if ( error == nil ) {
+                    // remove element from array
+                    self.guidings.remove(at: indexPath.row)
+                    
+                    // remove element from table view
+                    self.table.deleteRows(at: [indexPath], with: .fade)
+                }
+                else {
+                    // manage a possible problem to remove the item from database
+                }
+            }
+        }
+    }
+    
 }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

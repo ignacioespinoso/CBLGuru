@@ -19,7 +19,7 @@ class ProjectSettingsController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // 1
+        self.hideKeyboardWhenTappedAround()
         
         let nav = self.navigationController?.navigationBar
         
@@ -52,6 +52,13 @@ class ProjectSettingsController: UIViewController {
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.black]
         nav?.largeTitleTextAttributes = textAttributes
     }
- 
+    
+    /// Function to validate input data, creating and saving notifications, and dismissing.
+    @IBAction func saveProject(_ sender: UIButton) {
+        // in according to the operation, grab information from ui and persist it
+
+        // go back to the Home
+        self.navigationController?.popViewController(animated: true)
+    }
 
 }

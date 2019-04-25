@@ -22,6 +22,7 @@
 		803C81D2226F483100704B41 /* QueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C81D1226F483100704B41 /* QueueManager.swift */; };
 		803C81D4226F488500704B41 /* ProjectServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C81D3226F488500704B41 /* ProjectServices.swift */; };
 		803C81DD226F49E100704B41 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C81DC226F49E100704B41 /* CoreDataManager.swift */; };
+		80714C072271F587007FCB10 /* ProjectSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80714C062271F587007FCB10 /* ProjectSettingsController.swift */; };
 		80A8C818226FBB8700B8566C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A8C817226FBB8700B8566C /* Default-568h@2x.png */; };
 		80A8C81B226FBEFD00B8566C /* GuidingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8C819226FBEFD00B8566C /* GuidingData.swift */; };
 		80A8C81F226FC59E00B8566C /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8C81E226FC59E00B8566C /* Errors.swift */; };
@@ -34,6 +35,7 @@
 		80C47F7F2268DBE5009A7EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C47F7D2268DBE5009A7EC5 /* LaunchScreen.storyboard */; };
 		80DCE986226DFA7700597F37 /* Engage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80DCE985226DFA7700597F37 /* Engage.storyboard */; };
 		80DCE988226DFD0100597F37 /* EngageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DCE987226DFD0100597F37 /* EngageData.swift */; };
+		80F1B468227234D8009D4015 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F1B467227234D8009D4015 /* Common.swift */; };
 		80F5A59A2268EA32009AEB66 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F5A5992268EA32009AEB66 /* Settings.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,7 @@
 		803C81D1226F483100704B41 /* QueueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueManager.swift; sourceTree = "<group>"; };
 		803C81D3226F488500704B41 /* ProjectServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectServices.swift; sourceTree = "<group>"; };
 		803C81DC226F49E100704B41 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		80714C062271F587007FCB10 /* ProjectSettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSettingsController.swift; sourceTree = "<group>"; };
 		80A8C817226FBB8700B8566C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		80A8C819226FBEFD00B8566C /* GuidingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidingData.swift; sourceTree = "<group>"; };
 		80A8C81E226FC59E00B8566C /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
@@ -67,6 +70,7 @@
 		80C47F802268DBE5009A7EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80DCE985226DFA7700597F37 /* Engage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Engage.storyboard; sourceTree = "<group>"; };
 		80DCE987226DFD0100597F37 /* EngageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngageData.swift; sourceTree = "<group>"; };
+		80F1B467227234D8009D4015 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		80F5A5992268EA32009AEB66 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,6 +199,8 @@
 				803C81C8226F3AEE00704B41 /* EssentialQuestionController.swift */,
 				803C81CA226F3B0900704B41 /* ChallengeController.swift */,
 				803C81CC226F3B6600704B41 /* bigIdeaController.swift */,
+				80714C062271F587007FCB10 /* ProjectSettingsController.swift */,
+				80F1B467227234D8009D4015 /* Common.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -283,6 +289,7 @@
 				15413CC82270A02E00C42F71 /* ListQuestionsViewController.swift in Sources */,
 				801A4243226F562A00651347 /* DAO.swift in Sources */,
 				80A8C81F226FC59E00B8566C /* Errors.swift in Sources */,
+				80714C072271F587007FCB10 /* ProjectSettingsController.swift in Sources */,
 				801A425B226F63C700651347 /* ProjectData.swift in Sources */,
 				803C81D2226F483100704B41 /* QueueManager.swift in Sources */,
 				803C81CB226F3B0900704B41 /* ChallengeController.swift in Sources */,
@@ -295,6 +302,7 @@
 				801A4245226F563F00651347 /* ProjectDAO.swift in Sources */,
 				801A4254226F629900651347 /* ProjectPlanner.xcdatamodeld in Sources */,
 				80C47F772268DBE3009A7EC5 /* ViewController.swift in Sources */,
+				80F1B468227234D8009D4015 /* Common.swift in Sources */,
 				80C47F752268DBE3009A7EC5 /* AppDelegate.swift in Sources */,
 				803C81D4226F488500704B41 /* ProjectServices.swift in Sources */,
 				80A8C823226FC82E00B8566C /* GuidingServices.swift in Sources */,

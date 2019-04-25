@@ -83,7 +83,7 @@ class ProjectDAO: DAO {
     /// Method responsible for retrieving first created project from database
     /// - returns: the first created project from database
     /// - throws: if an error occurs during getting an object from database (Errors.DatabaseFailure)
-    static func findFirst() throws -> ProjectData {
+    static func findFirst() throws -> ProjectData? {
         // list of projects to be returned
         var projectList:[ProjectData]
         
@@ -97,7 +97,11 @@ class ProjectDAO: DAO {
         catch {
             throw Errors.DatabaseFailure
         }
-        
-        return projectList[0]
+
+        if projectList.count > 0 {
+            return projectList[0]
+        } else {
+            return nil
+        }
     }
 }

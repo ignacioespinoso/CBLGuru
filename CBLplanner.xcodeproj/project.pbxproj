@@ -17,6 +17,7 @@
 		803C81D2226F483100704B41 /* QueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C81D1226F483100704B41 /* QueueManager.swift */; };
 		803C81D4226F488500704B41 /* ProjectServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C81D3226F488500704B41 /* ProjectServices.swift */; };
 		803C81DD226F49E100704B41 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C81DC226F49E100704B41 /* CoreDataManager.swift */; };
+		80714C072271F587007FCB10 /* ProjectSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80714C062271F587007FCB10 /* ProjectSettingsController.swift */; };
 		80A8C818226FBB8700B8566C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A8C817226FBB8700B8566C /* Default-568h@2x.png */; };
 		80A8C81B226FBEFD00B8566C /* GuidingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8C819226FBEFD00B8566C /* GuidingData.swift */; };
 		80A8C81F226FC59E00B8566C /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8C81E226FC59E00B8566C /* Errors.swift */; };
@@ -43,6 +44,7 @@
 		803C81D1226F483100704B41 /* QueueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueManager.swift; sourceTree = "<group>"; };
 		803C81D3226F488500704B41 /* ProjectServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectServices.swift; sourceTree = "<group>"; };
 		803C81DC226F49E100704B41 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		80714C062271F587007FCB10 /* ProjectSettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSettingsController.swift; sourceTree = "<group>"; };
 		80A8C817226FBB8700B8566C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		80A8C819226FBEFD00B8566C /* GuidingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidingData.swift; sourceTree = "<group>"; };
 		80A8C81E226FC59E00B8566C /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				803C81C8226F3AEE00704B41 /* EssentialQuestionController.swift */,
 				803C81CA226F3B0900704B41 /* ChallengeController.swift */,
 				803C81CC226F3B6600704B41 /* bigIdeaController.swift */,
+				80714C062271F587007FCB10 /* ProjectSettingsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				801A4243226F562A00651347 /* DAO.swift in Sources */,
 				80A8C81F226FC59E00B8566C /* Errors.swift in Sources */,
+				80714C072271F587007FCB10 /* ProjectSettingsController.swift in Sources */,
 				801A425B226F63C700651347 /* ProjectData.swift in Sources */,
 				803C81D2226F483100704B41 /* QueueManager.swift in Sources */,
 				803C81CB226F3B0900704B41 /* ChallengeController.swift in Sources */,

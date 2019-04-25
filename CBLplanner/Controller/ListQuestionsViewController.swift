@@ -11,6 +11,23 @@ import UIKit
 class ListQuestionsViewController: UIViewController {
     fileprivate var guidings: [GuidingData] = []
     @IBOutlet weak var table: UITableView!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // 1
+        
+        let nav = self.navigationController?.navigationBar
+        
+        // 2
+        nav?.tintColor = UIColor.white
+        nav?.prefersLargeTitles = true
+        nav?.backgroundColor = UIColor(red:0.89, green:0.33, blue:0.15, alpha:1.0)
+        nav?.barTintColor = UIColor(red:0.67, green:0.81, blue:0.11, alpha:1.0)
+        //        nav?.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        nav?.largeTitleTextAttributes = textAttributes
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         // call super

@@ -29,6 +29,7 @@ class ListQuestionsViewController: UIViewController {
             }
             else {
                 // display error here because it was not possible to load season list
+                print("Error retrieving content")
             }
         }
     }
@@ -44,7 +45,7 @@ class ListQuestionsViewController: UIViewController {
     }
 }
     
-extension ListQuestionsViewController: UITabBarDelegate, UITableViewDataSource {
+extension ListQuestionsViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.guidings.count
@@ -52,15 +53,17 @@ extension ListQuestionsViewController: UITabBarDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // get a new cell
-        let cell:GuidingTableViewCell = table.dequeueReusableCell(withIdentifier: "GuidingCell", for: indexPath) as! GuidingTableViewCell
+        let cell:GuidingTableViewCell = table.dequeueReusableCell(withIdentifier: "GuidingCells", for: indexPath) as! GuidingTableViewCell
         
         // get the season data to be displayed
-        let guiding:GuidingData = self.guidings[indexPath.row]
+        if let guiding:GuidingData = self.guidings[indexPath.row] {
+            // fill cell with extracted information
+            cell.questionLabel.text = guiding.question
+            cell.resourceLabel.text = guiding.resource
+            cell.activityLabel.text = guiding.activity
+        }
         
-        // fill cell with extracted information
-        cell.questionLabel.text = guiding.question
-        cell.resourceLabel.text = guiding.resource
-        cell.activityLabel.text = guiding.activity
+        
         
         return cell
     }

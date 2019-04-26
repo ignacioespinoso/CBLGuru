@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="-62" y="-844"/>
         </scene>
-        <!--Guiding Questions-->
+        <!--GuidingContent-->
         <scene sceneID="Ta3-B5-oX6">
             <objects>
-                <viewController storyboardIdentifier="addOrEditGuiding" id="g7x-UW-nbU" customClass="ListQuestionsViewController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GuidingContent" title="GuidingContent" id="g7x-UW-nbU" customClass="ListQuestionsViewController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u4R-JZ-M9E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

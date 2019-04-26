@@ -74,7 +74,7 @@
         <!--Big Idea-->
         <scene sceneID="sFw-ny-bjv">
             <objects>
-                <viewController storyboardIdentifier="BigIdea" title="Big Idea" id="dnW-Yz-Kwy" customClass="bigIdeaController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BigIdea" title="Big Idea" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dnW-Yz-Kwy" customClass="bigIdeaController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="BigIdea" id="aaw-59-JgF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,7 +152,7 @@
         <!--Essential Question-->
         <scene sceneID="Hmn-yI-RAg">
             <objects>
-                <viewController storyboardIdentifier="EssentialQuestion" title="Essential Question" id="Y5Y-2r-Nmh" customClass="EssentialQuestionController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EssentialQuestion" title="Essential Question" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y5Y-2r-Nmh" customClass="EssentialQuestionController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t5r-D9-s8l">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -230,7 +230,7 @@
         <!--Challenge-->
         <scene sceneID="hO2-Ee-aB1">
             <objects>
-                <viewController storyboardIdentifier="Challenge" title="Challenge" id="eUO-h2-R73" customClass="ChallengeController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Challenge" title="Challenge" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eUO-h2-R73" customClass="ChallengeController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="Challenge" id="507-IW-rjV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

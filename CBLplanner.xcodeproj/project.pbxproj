@@ -25,6 +25,7 @@
 		803C81D2226F483100704B41 /* QueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C81D1226F483100704B41 /* QueueManager.swift */; };
 		803C81D4226F488500704B41 /* ProjectServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C81D3226F488500704B41 /* ProjectServices.swift */; };
 		803C81DD226F49E100704B41 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C81DC226F49E100704B41 /* CoreDataManager.swift */; };
+		804775EA2273708C00B7AA32 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 804775E82273708C00B7AA32 /* iCarousel.m */; };
 		80714C072271F587007FCB10 /* ProjectSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80714C062271F587007FCB10 /* ProjectSettingsController.swift */; };
 		80A8C818226FBB8700B8566C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A8C817226FBB8700B8566C /* Default-568h@2x.png */; };
 		80A8C81B226FBEFD00B8566C /* GuidingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A8C819226FBEFD00B8566C /* GuidingData.swift */; };
@@ -63,6 +64,9 @@
 		803C81D1226F483100704B41 /* QueueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueManager.swift; sourceTree = "<group>"; };
 		803C81D3226F488500704B41 /* ProjectServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectServices.swift; sourceTree = "<group>"; };
 		803C81DC226F49E100704B41 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		804775E42273702B00B7AA32 /* CBLplanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CBLplanner-Bridging-Header.h"; sourceTree = "<group>"; };
+		804775E82273708C00B7AA32 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		804775E92273708C00B7AA32 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		80714C062271F587007FCB10 /* ProjectSettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSettingsController.swift; sourceTree = "<group>"; };
 		80A8C817226FBB8700B8566C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		80A8C819226FBEFD00B8566C /* GuidingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidingData.swift; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 		80C76A652268DD3600180618 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				804775E92273708C00B7AA32 /* iCarousel.h */,
+				804775E82273708C00B7AA32 /* iCarousel.m */,
 				80C47F782268DBE3009A7EC5 /* Main.storyboard */,
 				80C47F7B2268DBE5009A7EC5 /* Assets.xcassets */,
 				80C47F7D2268DBE5009A7EC5 /* LaunchScreen.storyboard */,
@@ -194,6 +200,7 @@
 				80DCE985226DFA7700597F37 /* Engage.storyboard */,
 				155EB9DD2272336500BDA61B /* LinkToCBLNudge.storyboard */,
 				80F1B46E2272438A009D4015 /* Act.storyboard */,
+				804775E42273702B00B7AA32 /* CBLplanner-Bridging-Header.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,6 +257,7 @@
 				TargetAttributes = {
 					80C47F702268DBE3009A7EC5 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -302,6 +310,7 @@
 				15413CC82270A02E00C42F71 /* ListQuestionsViewController.swift in Sources */,
 				155EB9E02272376700BDA61B /* LinkToNudgeViewController.swift in Sources */,
 				801A4243226F562A00651347 /* DAO.swift in Sources */,
+				804775EA2273708C00B7AA32 /* iCarousel.m in Sources */,
 				80A8C81F226FC59E00B8566C /* Errors.swift in Sources */,
 				80714C072271F587007FCB10 /* ProjectSettingsController.swift in Sources */,
 				801A425B226F63C700651347 /* ProjectData.swift in Sources */,
@@ -468,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B73YH55T95;
 				INFOPLIST_FILE = CBLplanner/Info.plist;
@@ -477,6 +487,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ignacioribeiro.CBLplanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CBLplanner/View/CBLplanner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -486,6 +498,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B73YH55T95;
 				INFOPLIST_FILE = CBLplanner/Info.plist;
@@ -495,6 +508,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ignacioribeiro.CBLplanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CBLplanner/View/CBLplanner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

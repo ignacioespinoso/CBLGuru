@@ -16,10 +16,11 @@ class ProjectData: NSManagedObject {
     @NSManaged public var bigIdea: String?
     @NSManaged public var essentialQuestion: String?
     @NSManaged public var challenge: String?
-    @NSManaged public var fluxogramPic: NSData?
+    @NSManaged public var fluxogramPic: Data?
     @NSManaged public var members: String?
     @NSManaged public var motivation: String?
     @NSManaged public var investigate_synthesis: String?
+    @NSManaged public var act: String?
     @NSManaged public var has_guiding_data: GuidingData?
     
     convenience init() {

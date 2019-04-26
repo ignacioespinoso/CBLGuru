@@ -27,6 +27,7 @@ class ListQuestionsViewController: UIViewController {
         //        nav?.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         nav?.largeTitleTextAttributes = textAttributes
+        nav?.titleTextAttributes = textAttributes
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -83,6 +84,10 @@ extension ListQuestionsViewController: UITableViewDataSource, UITableViewDelegat
         
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section:Int) -> String? {
+        return "Guiding questions already created:"
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

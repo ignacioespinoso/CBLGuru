@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Act Controller-->
+        <!--Title-->
         <scene sceneID="gAw-FO-Sv3">
             <objects>
                 <viewController storyboardIdentifier="Act" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mip-w3-JSM" customClass="ActController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,16 +25,25 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VP3-AI-q8g">
                                 <rect key="frame" x="0.0" y="444" width="414" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Save"/>
+                                <state key="normal" title="Choose photo"/>
                                 <connections>
-                                    <action selector="saveProject:" destination="Mip-w3-JSM" eventType="touchUpInside" id="9UN-Ng-jhD"/>
+                                    <action selector="btnClicked" destination="Mip-w3-JSM" eventType="touchUpInside" id="sCa-lN-Bna"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Pk-Yz-HvD">
+                                <rect key="frame" x="196" y="510" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9yD-Fe-TeJ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="i3h-Tm-JRk"/>
+                    <navigationItem key="navigationItem" title="Title" id="sFh-Br-kjO"/>
+                    <connections>
+                        <outlet property="chooseBuuton" destination="VP3-AI-q8g" id="Uko-9Y-udk"/>
+                        <outlet property="imageView" destination="L1D-Ql-Z5Y" id="Mtz-L6-H3I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JKx-LQ-V3T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

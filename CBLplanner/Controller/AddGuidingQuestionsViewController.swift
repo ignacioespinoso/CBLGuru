@@ -22,6 +22,16 @@ class AddGuidingQuestionsViewController: UIViewController {
         self.gQuestionsTextField.text = guiding?.question
         self.gResourcesTextField.text = guiding?.resource
         self.gActivitiesTextField.text = guiding?.activity
+        
+        let border = CALayer()
+        let width = CGFloat(0.5)
+        border.borderColor = UIColor.darkGray.cgColor
+        border.borderWidth = width
+        border.frame = CGRect(x: 0, y: gActivitiesTextField.frame.size.height - width, width: gActivitiesTextField.frame.size.width, height: gActivitiesTextField.frame.size.height)
+        gActivitiesTextField.layer.addSublayer(border)
+        gActivitiesTextField.layer.masksToBounds = true
+      
+        
     }
     
     /// Function to validate input data, creating and saving notifications, and dismissing.

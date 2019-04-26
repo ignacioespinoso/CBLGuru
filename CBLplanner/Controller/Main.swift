@@ -35,10 +35,8 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
     let scrollLabels: [String] = ["Configurações", "CBL Nudge", "Planejador", "Reflections", "Revisão"]
     let scrollImages: [String] = ["settings.png", "light-bulb.png", "time.png", "reflection.png", "review.png"]
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-       
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: false)
         
         superView.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
@@ -50,7 +48,7 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
         underScroll.delegate = self
         
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: false)
@@ -84,7 +82,7 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
         let labelTitle : UILabel = UILabel(frame: CGRect(x: 30, y: 27, width: view.frame.width - 60, height: 50))
         labelTitle.textAlignment = .left
         labelTitle.text = self.fases[index]
-        labelTitle.font = UIFont.boldSystemFont(ofSize: 34)
+        labelTitle.font = UIFont.boldSystemFont(ofSize: 30)
         
         let labelBody : UILabel = UILabel(frame: CGRect(x: 30, y: 40, width: view.frame.width - 60, height: largura - grayLargura))
         labelBody.lineBreakMode = NSLineBreakMode.byWordWrapping

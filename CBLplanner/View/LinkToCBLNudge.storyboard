@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oI3-Wm-BnB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,32 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="L4r-FZ-U0q">
-            <objects>
-                <navigationController id="oI3-Wm-BnB" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Sr-Qk-LJl">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="N4b-JR-FLw" kind="relationship" relationship="rootViewController" id="ulX-9H-kYx"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LIm-0I-dYZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-786" y="1"/>
-        </scene>
-        <!--Link To Nudge View Controller-->
+        <!--CBLNudge-->
         <scene sceneID="EAF-wr-CHa">
             <objects>
-                <viewController id="N4b-JR-FLw" customClass="LinkToNudgeViewController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="CBLNudge" storyboardIdentifier="CBLNudge" title="CBLNudge" id="N4b-JR-FLw" customClass="LinkToNudgeViewController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Wj-0f-MBu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need a nudge? Download CBL Nudge on the App Store to help you keep following your CBL process." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2Z-6n-dyV">
-                                <rect key="frame" x="63" y="501" width="288" height="91"/>
+                                <rect key="frame" x="63" y="457" width="288" height="91"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="91" id="nFN-jU-NXX"/>
                                 </constraints>
@@ -44,17 +28,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wF1-Gb-wmR">
-                                <rect key="frame" x="74" y="629" width="266" height="126"/>
+                                <rect key="frame" x="74" y="585" width="266" height="170"/>
                                 <state key="normal" backgroundImage="DownloadOnTheAppStoreButton"/>
                                 <connections>
                                     <action selector="tapCBLNudge:" destination="N4b-JR-FLw" eventType="touchUpInside" id="OSc-8M-Kml"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CBLNudge" translatesAutoresizingMaskIntoConstraints="NO" id="e4r-0f-jST">
-                                <rect key="frame" x="119" y="210" width="176" height="176"/>
+                                <rect key="frame" x="119" y="166" width="176" height="176"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CBL Nudge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QmE-5t-hdq">
-                                <rect key="frame" x="118" y="451" width="178" height="50"/>
+                                <rect key="frame" x="118" y="407" width="178" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="oCr-6t-4hH"/>
                                 </constraints>

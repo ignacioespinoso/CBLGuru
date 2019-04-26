@@ -9,14 +9,36 @@
 import UIKit
 
 class ProjectSettingsController: UIViewController {
-    
+    @objc var project:ProjectData?
     @IBOutlet weak var projectTitle: UITextField!
     
     @IBOutlet weak var motivation: UITextView!
     @IBOutlet weak var members: UITextField!
-    @IBOutlet weak var notes: UILabel!
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        // call super
+        super.viewWillAppear(animated)
+        
+        // get all seasons
+        ProjectServices.getFirstProject { (error, project) in
+            if (error == nil) {
+                // assign project
+                self.project = project
+                
+                OperationQueue.main.addOperation {
+                    // setup the ui with new data
+                    self.projectTitle.text = project?.name
+                    self.members.text = project?.members
+                    self.motivation.text = project?.motivation
+                }
+                
+            }
+            else {
+                print("Unable to find first project")
+            }
+        }
+    }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
@@ -33,13 +55,40 @@ class ProjectSettingsController: UIViewController {
     
     
 
-    
     /// Function to validate input data, creating and saving notifications, and dismissing.
     @IBAction func saveProject(_ sender: UIButton) {
         // in according to the operation, grab information from ui and persist it
-
+        
+        if ( self.project != nil ) {
+            
+            // get information from UI
+            self.project!.name = self.projectTitle.text!
+            self.project!.members = self.members.text!
+            self.project!.motivation = self.motivation.text!
+            
+            // update the information
+            ProjectServices.updateProject(project: self.project!) { error in
+                if (error != nil) {
+                    // treat error if necessary
+                }
+            }
+        }
+        else {
+            // initialize a new alarm get information from UI
+            self.project = ProjectData()
+            self.project!.name = self.projectTitle.text!
+            self.project!.members = self.members.text!
+            self.project!.motivation = self.motivation.text!
+            // create new alarm
+            ProjectServices.createProject(project: self.project!) { error in
+                if (error != nil) {
+                    print("Error creating project")
+                    // treat error if necessary
+                }
+            }
+        }
+        
         // go back to the Home
         self.navigationController?.popViewController(animated: true)
     }
-
 }

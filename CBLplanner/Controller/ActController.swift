@@ -19,6 +19,7 @@ class ActController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         imagePicker.delegate = self
         
         let nav = self.navigationController?.navigationBar

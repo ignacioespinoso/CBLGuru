@@ -13,7 +13,7 @@
         <!--Act-->
         <scene sceneID="gAw-FO-Sv3">
             <objects>
-                <viewController storyboardIdentifier="Act" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mip-w3-JSM" customClass="ActController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Act" title="Act" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mip-w3-JSM" customClass="ActController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EQe-bR-npy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

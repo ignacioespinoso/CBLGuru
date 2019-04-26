@@ -160,7 +160,7 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
         } else if (index == 4) {
             performSegue(withIdentifier: "synthesisSegue", sender: nil)
         } else {
-            performSegue(withIdentifier: "engageSegue", sender: nil)
+            performSegue(withIdentifier: "actSegue", sender: nil)
         }
         
         

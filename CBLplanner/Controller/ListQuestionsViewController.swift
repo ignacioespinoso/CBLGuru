@@ -15,6 +15,7 @@ class ListQuestionsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         // 1
         
         let nav = self.navigationController?.navigationBar

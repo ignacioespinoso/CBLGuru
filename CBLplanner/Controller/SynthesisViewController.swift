@@ -40,6 +40,7 @@ class SynthesisViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
         
         let nav = self.navigationController?.navigationBar

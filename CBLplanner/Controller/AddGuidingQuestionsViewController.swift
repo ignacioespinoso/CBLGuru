@@ -18,7 +18,7 @@ class AddGuidingQuestionsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.hideKeyboardWhenTappedAround()
         self.gQuestionsTextField.text = guiding?.question
         self.gResourcesTextField.text = guiding?.resource
         self.gActivitiesTextField.text = guiding?.activity

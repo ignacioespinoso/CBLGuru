@@ -11,9 +11,8 @@ import UIKit
 class EssentialQuestionController: UIViewController {
     /// Project to be stored in case of updating operation
     @objc var project:ProjectData?
-
-    @IBOutlet weak var essentialQuestion: UITextField!
     
+    @IBOutlet weak var essentialQuestion: UITextView!
     
     override func viewWillAppear(_ animated: Bool) {
         // call super

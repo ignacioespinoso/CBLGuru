@@ -39,9 +39,20 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: false)
         
-        superView.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
-        underScroll.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
-        carousel.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
+        switch self.carousel.currentItemIndex {
+        case 5:
+            carousel.backgroundColor = UIColor(red: 30/255, green: 134/255, blue: 152/255, alpha: 1.0) // #1e8698
+            superView.backgroundColor = UIColor(red: 30/255, green: 134/255, blue: 152/255, alpha: 1.0) // #1e8698
+            underScroll.backgroundColor = UIColor(red: 30/255, green: 134/255, blue: 152/255, alpha: 1.0) // #1e8698
+        case 3, 4:
+            carousel.backgroundColor = UIColor(red: 170/255, green: 207/255, blue: 28/255, alpha: 1.0) // #aacf1c
+            superView.backgroundColor = UIColor(red: 170/255, green: 207/255, blue: 28/255, alpha: 1.0) // #aacf1c
+            underScroll.backgroundColor = UIColor(red: 170/255, green: 207/255, blue: 28/255, alpha: 1.0) // #aacf1c
+        default:
+            carousel.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
+            superView.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
+            underScroll.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
+        }
         carousel.type = iCarouselType.cylinder
         carousel.delegate = self
         carousel.dataSource = self
@@ -121,18 +132,18 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
         impactFeedbackgenerator.impactOccurred()
         
         switch self.carousel.currentItemIndex {
-        case 0...2:
-            carousel.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
-            superView.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
-            underScroll.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
+        case 5:
+            carousel.backgroundColor = UIColor(red: 30/255, green: 134/255, blue: 152/255, alpha: 1.0) // #1e8698
+            superView.backgroundColor = UIColor(red: 30/255, green: 134/255, blue: 152/255, alpha: 1.0) // #1e8698
+            underScroll.backgroundColor = UIColor(red: 30/255, green: 134/255, blue: 152/255, alpha: 1.0) // #1e8698
         case 3, 4:
             carousel.backgroundColor = UIColor(red: 170/255, green: 207/255, blue: 28/255, alpha: 1.0) // #aacf1c
             superView.backgroundColor = UIColor(red: 170/255, green: 207/255, blue: 28/255, alpha: 1.0) // #aacf1c
             underScroll.backgroundColor = UIColor(red: 170/255, green: 207/255, blue: 28/255, alpha: 1.0) // #aacf1c
         default:
-            carousel.backgroundColor = UIColor(red: 30/255, green: 134/255, blue: 152/255, alpha: 1.0) // #1e8698
-            superView.backgroundColor = UIColor(red: 30/255, green: 134/255, blue: 152/255, alpha: 1.0) // #1e8698
-            underScroll.backgroundColor = UIColor(red: 30/255, green: 134/255, blue: 152/255, alpha: 1.0) // #1e8698
+            carousel.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
+            superView.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
+            underScroll.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
         }
     }
     

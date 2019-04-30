@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_5" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,27 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need a nudge? Download CBL Nudge on the App Store to help you keep following your CBL process." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2Z-6n-dyV">
-                                <rect key="frame" x="63" y="457" width="288" height="91"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="91" id="nFN-jU-NXX"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need a nudge? Download CBL Nudge on the App Store to help you keep following your CBL process." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2Z-6n-dyV">
+                                <rect key="frame" x="74" y="410" width="266" height="81.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wF1-Gb-wmR">
-                                <rect key="frame" x="74" y="585" width="266" height="170"/>
-                                <state key="normal" backgroundImage="DownloadOnTheAppStoreButton"/>
-                                <connections>
-                                    <action selector="tapCBLNudge:" destination="N4b-JR-FLw" eventType="touchUpInside" id="OSc-8M-Kml"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CBLNudge" translatesAutoresizingMaskIntoConstraints="NO" id="e4r-0f-jST">
-                                <rect key="frame" x="119" y="166" width="176" height="176"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" image="CBLNudge" translatesAutoresizingMaskIntoConstraints="NO" id="e4r-0f-jST">
+                                <rect key="frame" x="119" y="104" width="176" height="176"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CBL Nudge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QmE-5t-hdq">
-                                <rect key="frame" x="118" y="407" width="178" height="50"/>
+                                <rect key="frame" x="118" y="340" width="178" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="oCr-6t-4hH"/>
                                 </constraints>
@@ -46,22 +36,30 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wF1-Gb-wmR">
+                                <rect key="frame" x="74" y="551.5" width="266" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wF1-Gb-wmR" secondAttribute="height" multiplier="266:92" id="YTT-kE-jba"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="DownloadOnTheAppStoreButton"/>
+                                <connections>
+                                    <action selector="tapCBLNudge:" destination="N4b-JR-FLw" eventType="touchUpInside" id="OSc-8M-Kml"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1176470588" green="0.52549019610000003" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="t2Z-6n-dyV" firstAttribute="top" secondItem="QmE-5t-hdq" secondAttribute="bottom" id="4e0-7q-reT"/>
-                            <constraint firstItem="cmF-XL-IC6" firstAttribute="trailing" secondItem="t2Z-6n-dyV" secondAttribute="trailing" constant="63" id="7qg-Lo-bQc"/>
-                            <constraint firstItem="wF1-Gb-wmR" firstAttribute="width" secondItem="0Wj-0f-MBu" secondAttribute="height" multiplier="19:64" id="ELm-Dt-GvQ"/>
-                            <constraint firstItem="t2Z-6n-dyV" firstAttribute="leading" secondItem="cmF-XL-IC6" secondAttribute="leading" constant="63" id="Kxm-DH-hxY"/>
+                            <constraint firstItem="t2Z-6n-dyV" firstAttribute="top" secondItem="QmE-5t-hdq" secondAttribute="bottom" constant="20" id="4e0-7q-reT"/>
+                            <constraint firstItem="cmF-XL-IC6" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wF1-Gb-wmR" secondAttribute="bottom" constant="40" id="8CK-Pc-1z0"/>
                             <constraint firstItem="wF1-Gb-wmR" firstAttribute="centerX" secondItem="cmF-XL-IC6" secondAttribute="centerX" id="SSA-o3-l4p"/>
-                            <constraint firstItem="e4r-0f-jST" firstAttribute="top" relation="lessThanOrEqual" secondItem="cmF-XL-IC6" secondAttribute="top" constant="122" id="TCb-c2-EQO"/>
-                            <constraint firstItem="cmF-XL-IC6" firstAttribute="bottom" secondItem="wF1-Gb-wmR" secondAttribute="bottom" constant="107" id="cJX-0T-Lns"/>
+                            <constraint firstItem="wF1-Gb-wmR" firstAttribute="top" secondItem="t2Z-6n-dyV" secondAttribute="bottom" constant="60" id="UyF-XX-KZn"/>
+                            <constraint firstItem="t2Z-6n-dyV" firstAttribute="width" secondItem="wF1-Gb-wmR" secondAttribute="width" id="WgS-Nv-jOk"/>
                             <constraint firstItem="e4r-0f-jST" firstAttribute="centerX" secondItem="cmF-XL-IC6" secondAttribute="centerX" id="j7F-Xa-ENy"/>
                             <constraint firstItem="e4r-0f-jST" firstAttribute="width" secondItem="0Wj-0f-MBu" secondAttribute="height" multiplier="11:56" id="k0c-wt-Qug"/>
+                            <constraint firstItem="e4r-0f-jST" firstAttribute="top" secondItem="cmF-XL-IC6" secondAttribute="top" constant="60" id="kJb-Dz-6QD"/>
                             <constraint firstItem="t2Z-6n-dyV" firstAttribute="centerX" secondItem="cmF-XL-IC6" secondAttribute="centerX" id="lmW-ZJ-adt"/>
-                            <constraint firstItem="QmE-5t-hdq" firstAttribute="top" secondItem="e4r-0f-jST" secondAttribute="bottom" constant="65" id="lva-uY-1i9"/>
+                            <constraint firstItem="QmE-5t-hdq" firstAttribute="top" secondItem="e4r-0f-jST" secondAttribute="bottom" constant="60" id="lva-uY-1i9"/>
                             <constraint firstItem="QmE-5t-hdq" firstAttribute="centerX" secondItem="cmF-XL-IC6" secondAttribute="centerX" id="owA-LG-FgV"/>
-                            <constraint firstItem="wF1-Gb-wmR" firstAttribute="top" secondItem="t2Z-6n-dyV" secondAttribute="bottom" constant="37" id="pCO-T0-kio"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cmF-XL-IC6"/>
                     </view>

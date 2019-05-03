@@ -21,7 +21,7 @@ class SynthesisViewController: UIViewController {
         
         // get all seasons
         ProjectServices.getFirstProject { (error, project) in
-            if (error == nil) {
+            if (error == nil && project != nil) {
                 // assign project
                 self.project = project
                 

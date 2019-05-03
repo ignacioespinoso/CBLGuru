@@ -20,7 +20,7 @@ class EssentialQuestionController: UIViewController {
         
         // get all seasons
         ProjectServices.getFirstProject { (error, project) in
-            if (error == nil) {
+            if (error == nil && project != nil) {
                 // assign season list
                 self.project = project!
                 

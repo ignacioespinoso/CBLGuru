@@ -72,7 +72,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Pk-Yz-HvD">
                                 <rect key="frame" x="75" y="718" width="264" height="66"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <state key="normal" title="Save" backgroundImage="ButtonAct">
+                                <state key="normal" title="Save" backgroundImage="actButton">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -132,6 +132,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ButtonAct" width="101" height="27"/>
+        <image name="actButton" width="101" height="27"/>
     </resources>
 </document>

@@ -27,7 +27,7 @@ class SynthesisViewController: UIViewController {
                 
                 OperationQueue.main.addOperation {
                     // setup the ui with new data
-                    self.synthesisTextView.text = project?.bigIdea
+                    self.synthesisTextView.text = project?.investigate_synthesis
                 }
                 
             }

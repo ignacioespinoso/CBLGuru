@@ -22,7 +22,7 @@ class ChallengeController: UIViewController {
         ProjectServices.getFirstProject { (error, project) in
             if (error == nil && project != nil) {
                 // assign season list
-                self.project = project!
+                self.project = project
                 
                 OperationQueue.main.addOperation {
                     // setup the ui with new data

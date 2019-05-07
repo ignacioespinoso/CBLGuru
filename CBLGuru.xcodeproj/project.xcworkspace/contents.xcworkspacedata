@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CBLplanner.xcodeproj">
+      location = "self:/Users/ignacio.ribeiro/Documents/dev/CBLplanner/CBLGuru.xcodeproj">
    </FileRef>
 </Workspace>

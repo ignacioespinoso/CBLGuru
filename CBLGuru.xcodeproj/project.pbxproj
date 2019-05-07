@@ -62,7 +62,7 @@
 		803C81D1226F483100704B41 /* QueueManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueManager.swift; sourceTree = "<group>"; };
 		803C81D3226F488500704B41 /* ProjectServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectServices.swift; sourceTree = "<group>"; };
 		803C81DC226F49E100704B41 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		804775E42273702B00B7AA32 /* CBLplanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CBLplanner-Bridging-Header.h"; sourceTree = "<group>"; };
+		804775E42273702B00B7AA32 /* CBLGuru-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CBLGuru-Bridging-Header.h"; sourceTree = "<group>"; };
 		804775E82273708C00B7AA32 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		804775E92273708C00B7AA32 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		80714C062271F587007FCB10 /* ProjectSettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSettingsController.swift; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 		80A8C81E226FC59E00B8566C /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		80A8C820226FC75700B8566C /* GuidingDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidingDAO.swift; sourceTree = "<group>"; };
 		80A8C822226FC82E00B8566C /* GuidingServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidingServices.swift; sourceTree = "<group>"; };
-		80C47F712268DBE3009A7EC5 /* CBLplanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBLplanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80C47F712268DBE3009A7EC5 /* CBLGuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBLGuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C47F742268DBE3009A7EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C47F762268DBE3009A7EC5 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		80C47F792268DBE3009A7EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				80A8C817226FBB8700B8566C /* Default-568h@2x.png */,
-				80C47F732268DBE3009A7EC5 /* CBLplanner */,
+				80C47F732268DBE3009A7EC5 /* CBLGuru */,
 				80C47F722268DBE3009A7EC5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -154,12 +154,12 @@
 		80C47F722268DBE3009A7EC5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				80C47F712268DBE3009A7EC5 /* CBLplanner.app */,
+				80C47F712268DBE3009A7EC5 /* CBLGuru.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		80C47F732268DBE3009A7EC5 /* CBLplanner */ = {
+		80C47F732268DBE3009A7EC5 /* CBLGuru */ = {
 			isa = PBXGroup;
 			children = (
 				80C47F802268DBE5009A7EC5 /* Info.plist */,
@@ -171,7 +171,7 @@
 				80C76A662268DD4000180618 /* Controller */,
 				80C76A652268DD3600180618 /* View */,
 			);
-			path = CBLplanner;
+			path = CBLGuru;
 			sourceTree = "<group>";
 		};
 		80C47F862268DC82009A7EC5 /* Model */ = {
@@ -198,7 +198,7 @@
 				80DCE985226DFA7700597F37 /* Engage.storyboard */,
 				155EB9DD2272336500BDA61B /* LinkToCBLNudge.storyboard */,
 				80F1B46E2272438A009D4015 /* Act.storyboard */,
-				804775E42273702B00B7AA32 /* CBLplanner-Bridging-Header.h */,
+				804775E42273702B00B7AA32 /* CBLGuru-Bridging-Header.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,9 +225,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		80C47F702268DBE3009A7EC5 /* CBLplanner */ = {
+		80C47F702268DBE3009A7EC5 /* CBLGuru */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 80C47F832268DBE5009A7EC5 /* Build configuration list for PBXNativeTarget "CBLplanner" */;
+			buildConfigurationList = 80C47F832268DBE5009A7EC5 /* Build configuration list for PBXNativeTarget "CBLGuru" */;
 			buildPhases = (
 				80C47F6D2268DBE3009A7EC5 /* Sources */,
 				80C47F6E2268DBE3009A7EC5 /* Frameworks */,
@@ -237,9 +237,9 @@
 			);
 			dependencies = (
 			);
-			name = CBLplanner;
+			name = CBLGuru;
 			productName = CBLplanner;
-			productReference = 80C47F712268DBE3009A7EC5 /* CBLplanner.app */;
+			productReference = 80C47F712268DBE3009A7EC5 /* CBLGuru.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -258,7 +258,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 80C47F6C2268DBE3009A7EC5 /* Build configuration list for PBXProject "CBLplanner" */;
+			buildConfigurationList = 80C47F6C2268DBE3009A7EC5 /* Build configuration list for PBXProject "CBLGuru" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -271,7 +271,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				80C47F702268DBE3009A7EC5 /* CBLplanner */,
+				80C47F702268DBE3009A7EC5 /* CBLGuru */,
 			);
 		};
 /* End PBXProject section */
@@ -476,14 +476,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B73YH55T95;
-				INFOPLIST_FILE = CBLplanner/Info.plist;
+				INFOPLIST_FILE = CBLGuru/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ignacioribeiro.CBLplanner;
+				PRODUCT_BUNDLE_IDENTIFIER = ignacioribeiro.CBLGuru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CBLplanner/View/CBLplanner-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "CBLGuru/View/CBLGuru-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -497,14 +497,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B73YH55T95;
-				INFOPLIST_FILE = CBLplanner/Info.plist;
+				INFOPLIST_FILE = CBLGuru/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ignacioribeiro.CBLplanner;
+				PRODUCT_BUNDLE_IDENTIFIER = ignacioribeiro.CBLGuru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CBLplanner/View/CBLplanner-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "CBLGuru/View/CBLGuru-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -513,7 +513,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		80C47F6C2268DBE3009A7EC5 /* Build configuration list for PBXProject "CBLplanner" */ = {
+		80C47F6C2268DBE3009A7EC5 /* Build configuration list for PBXProject "CBLGuru" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				80C47F812268DBE5009A7EC5 /* Debug */,
@@ -522,7 +522,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		80C47F832268DBE5009A7EC5 /* Build configuration list for PBXNativeTarget "CBLplanner" */ = {
+		80C47F832268DBE5009A7EC5 /* Build configuration list for PBXNativeTarget "CBLGuru" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				80C47F842268DBE5009A7EC5 /* Debug */,

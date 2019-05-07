@@ -60,7 +60,7 @@
             <objects>
                 <navigationController id="MRQ-Ta-2iJ" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cec-yg-evd">
-                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -74,7 +74,7 @@
         <!--Big Idea-->
         <scene sceneID="sFw-ny-bjv">
             <objects>
-                <viewController storyboardIdentifier="BigIdea" title="Big Idea" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dnW-Yz-Kwy" customClass="bigIdeaController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BigIdea" title="Big Idea" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dnW-Yz-Kwy" customClass="bigIdeaController" customModule="CBLGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="BigIdea" id="aaw-59-JgF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,7 +152,7 @@
         <!--Essential Question-->
         <scene sceneID="Hmn-yI-RAg">
             <objects>
-                <viewController storyboardIdentifier="EssentialQuestion" title="Essential Question" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y5Y-2r-Nmh" customClass="EssentialQuestionController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EssentialQuestion" title="Essential Question" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y5Y-2r-Nmh" customClass="EssentialQuestionController" customModule="CBLGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t5r-D9-s8l">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,7 +169,6 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="raU-7f-Z2v">
                                         <rect key="frame" x="26" y="40" width="268" height="87"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
                                         <color key="textColor" red="0.825401783" green="0.36287742849999999" blue="0.21563294529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -230,7 +229,7 @@
         <!--Challenge-->
         <scene sceneID="hO2-Ee-aB1">
             <objects>
-                <viewController storyboardIdentifier="Challenge" title="Challenge" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eUO-h2-R73" customClass="ChallengeController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Challenge" title="Challenge" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eUO-h2-R73" customClass="ChallengeController" customModule="CBLGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="Challenge" id="507-IW-rjV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,7 +252,6 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ks-1A-MRL">
                                         <rect key="frame" x="26" y="40" width="268" height="87"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
                                         <color key="textColor" red="0.825401783" green="0.36287742849999999" blue="0.21563294529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

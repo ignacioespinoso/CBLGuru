@@ -13,10 +13,12 @@
         <!--Settings-->
         <scene sceneID="UFI-2w-GPm">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Settings" storyboardName="Settings" referencedIdentifier="Settings" id="tEl-SU-RMc" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="Settings" storyboardName="Settings" referencedIdentifier="Settings" id="tEl-SU-RMc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Nfx-YZ-H81"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAU-2L-ijR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1715" y="-159"/>
+            <point key="canvasLocation" x="1236" y="291"/>
         </scene>
         <!--CBLNudge-->
         <scene sceneID="fIs-xi-1oJ">
@@ -24,7 +26,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="CBLNudge" storyboardName="LinkToCBLNudge" referencedIdentifier="CBLNudge" id="U8W-vI-cpK" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKO-3q-Lay" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1728" y="-123"/>
+            <point key="canvasLocation" x="2637.68115942029" y="-123.21428571428571"/>
         </scene>
         <!--Act-->
         <scene sceneID="n9g-xP-Mg7">
@@ -32,7 +34,7 @@
                 <viewControllerPlaceholder storyboardName="Act" referencedIdentifier="Act" id="TgO-ml-Z9V" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0vZ-Vd-Dxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1700" y="-56"/>
+            <point key="canvasLocation" x="2609.4202898550725" y="-56.25"/>
         </scene>
         <!--Engage-->
         <scene sceneID="3hd-ad-5VC">
@@ -40,7 +42,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="Engage" storyboardName="Engage" referencedIdentifier="Engage" id="nuf-md-94J" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I6a-hX-6Vy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1715" y="-471"/>
+            <point key="canvasLocation" x="2623.913043478261" y="-471.42857142857139"/>
         </scene>
         <!--BigIdea-->
         <scene sceneID="pst-3b-kE1">
@@ -48,7 +50,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="BigIdea" storyboardName="Engage" referencedIdentifier="BigIdea" id="GCb-8P-jDF" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wK-r3-vGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1712" y="-437"/>
+            <point key="canvasLocation" x="2621.739130434783" y="-437.27678571428572"/>
         </scene>
         <!--EssentialQuestion-->
         <scene sceneID="TCK-9a-8Yd">
@@ -56,7 +58,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="EssentialQuestion" storyboardName="Engage" referencedIdentifier="EssentialQuestion" id="yg7-Ml-uTa" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc8-Jv-Izg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1757" y="-398"/>
+            <point key="canvasLocation" x="2666.666666666667" y="-398.4375"/>
         </scene>
         <!--Synthesis-->
         <scene sceneID="lxf-2A-x9k">
@@ -64,7 +66,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="Synthesis" storyboardName="Investigate" referencedIdentifier="Synthesis" id="NS1-vT-h8L" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dod-OQ-yY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1722" y="-299"/>
+            <point key="canvasLocation" x="2631.8840579710145" y="-299.33035714285711"/>
         </scene>
         <!--Challenge-->
         <scene sceneID="4RH-zH-nDW">
@@ -72,7 +74,7 @@
                 <viewControllerPlaceholder storyboardName="Engage" referencedIdentifier="Challenge" id="tTL-6K-EzO" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJ2-mD-bp5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1722" y="-364"/>
+            <point key="canvasLocation" x="2631.1594202898555" y="-364.28571428571428"/>
         </scene>
         <!--GuidingContent-->
         <scene sceneID="Aaf-4B-ZfV">
@@ -80,26 +82,28 @@
                 <viewControllerPlaceholder storyboardIdentifier="GuidingContent" storyboardName="Investigate" referencedIdentifier="GuidingContent" id="zvV-P9-1jj" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="smX-gd-zIe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1748" y="-246"/>
+            <point key="canvasLocation" x="2657.971014492754" y="-246.42857142857142"/>
         </scene>
         <!--CBLNudge-->
         <scene sceneID="Ayk-cc-SwY">
             <objects>
-                <viewControllerPlaceholder storyboardName="LinkToCBLNudge" referencedIdentifier="CBLNudge" id="Anm-3d-oxj" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="LinkToCBLNudge" referencedIdentifier="CBLNudge" id="Anm-3d-oxj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="i8W-1s-uNc"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zp4-jb-wy5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1722" y="-198"/>
+            <point key="canvasLocation" x="1652" y="291"/>
         </scene>
-        <!--Main-->
+        <!--Projeto-->
         <scene sceneID="ITk-Tu-hj5">
             <objects>
-                <viewController id="D0a-bq-jPo" customClass="Main" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="D0a-bq-jPo" customClass="Main" customModule="CBLGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pZ2-5i-TWo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p66-FC-obU" userLabel="viewTest" customClass="iCarousel">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="665"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appIcontela.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xmx-Ze-EHL">
                                         <rect key="frame" x="157" y="45" width="100" height="100"/>
@@ -115,50 +119,22 @@
                                     <constraint firstItem="Xmx-Ze-EHL" firstAttribute="centerX" secondItem="p66-FC-obU" secondAttribute="centerX" id="qPl-kU-fGA"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AZZ-6D-r4S">
-                                <rect key="frame" x="0.0" y="665" width="414" height="109"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yul-fe-fvr">
-                                    <size key="itemSize" width="150" height="150"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.5" contentMode="center" reuseIdentifier="functionCell" id="UBI-ej-ddz">
-                                        <rect key="frame" x="0.0" y="-20.5" width="150" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="D0a-bq-jPo" id="S0q-h1-hMp"/>
-                                </connections>
-                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="kiq-Pf-F5M" firstAttribute="trailing" secondItem="p66-FC-obU" secondAttribute="trailing" id="8Eb-1Z-QWj"/>
-                            <constraint firstItem="kiq-Pf-F5M" firstAttribute="bottom" secondItem="AZZ-6D-r4S" secondAttribute="bottom" id="G7n-bV-qHC"/>
-                            <constraint firstItem="kiq-Pf-F5M" firstAttribute="trailing" secondItem="AZZ-6D-r4S" secondAttribute="trailing" id="HMy-GV-3xk"/>
-                            <constraint firstItem="AZZ-6D-r4S" firstAttribute="top" secondItem="p66-FC-obU" secondAttribute="bottom" id="ISw-BJ-Ltt"/>
+                            <constraint firstItem="kiq-Pf-F5M" firstAttribute="bottom" secondItem="p66-FC-obU" secondAttribute="bottom" id="WqI-pm-4JQ"/>
                             <constraint firstItem="p66-FC-obU" firstAttribute="leading" secondItem="kiq-Pf-F5M" secondAttribute="leading" id="cLm-VP-akk"/>
-                            <constraint firstItem="AZZ-6D-r4S" firstAttribute="height" secondItem="pZ2-5i-TWo" secondAttribute="height" multiplier="0.135" id="o5h-as-EdD"/>
-                            <constraint firstItem="AZZ-6D-r4S" firstAttribute="leading" secondItem="kiq-Pf-F5M" secondAttribute="leading" id="p6x-9Z-CfZ"/>
                             <constraint firstItem="p66-FC-obU" firstAttribute="top" secondItem="kiq-Pf-F5M" secondAttribute="top" id="vrt-KI-gUu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kiq-Pf-F5M"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Projeto" id="oWc-lw-xB8"/>
                     <navigationItem key="navigationItem" id="aAk-iJ-dwg"/>
                     <connections>
                         <outlet property="carousel" destination="p66-FC-obU" id="dLP-eR-QsE"/>
                         <outlet property="icon" destination="Xmx-Ze-EHL" id="eNw-ZU-xJM"/>
                         <outlet property="superView" destination="pZ2-5i-TWo" id="kjV-fb-1Z4"/>
-                        <outlet property="underScroll" destination="AZZ-6D-r4S" id="rSw-UY-HRk"/>
                         <segue destination="nuf-md-94J" kind="show" identifier="engageSegue" id="4WZ-JH-Jxd"/>
                         <segue destination="GCb-8P-jDF" kind="show" identifier="bigIdeaSegue" id="ptd-zF-Exq"/>
                         <segue destination="yg7-Ml-uTa" kind="show" identifier="essentialQuestionSegue" id="9q2-zY-tX2"/>
@@ -173,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ygl-Gx-lJP" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="775" y="-246"/>
+            <point key="canvasLocation" x="1684.057971014493" y="-246.42857142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5aG-CY-9NK">
@@ -185,16 +161,43 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GJe-wk-kng">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
-                        <segue destination="D0a-bq-jPo" kind="relationship" relationship="rootViewController" id="2mR-HL-RGg"/>
+                        <segue destination="VEk-ek-jgJ" kind="relationship" relationship="rootViewController" id="2mR-HL-RGg"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMc-2k-5cE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-191.30434782608697" y="-299.33035714285711"/>
+            <point key="canvasLocation" x="-142" y="-246"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nh5-nD-RMv">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="VEk-ek-jgJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Nsb-Xh-a6f"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="es1-Rz-kt8">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="D0a-bq-jPo" kind="relationship" relationship="viewControllers" id="5Pf-0b-O17"/>
+                        <segue destination="tEl-SU-RMc" kind="relationship" relationship="viewControllers" id="z1D-Md-0eW"/>
+                        <segue destination="Anm-3d-oxj" kind="relationship" relationship="viewControllers" id="Lup-E1-gn2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gOj-M4-0UR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773.91304347826087" y="-246.42857142857142"/>
         </scene>
     </scenes>
     <resources>
         <image name="appIcontela.png" width="16" height="16"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Lup-E1-gn2"/>
+        <segue reference="z1D-Md-0eW"/>
+    </inferredMetricsTieBreakers>
 </document>

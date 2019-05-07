@@ -12,7 +12,7 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
     
     @IBOutlet weak var superView: UIView!
     @IBOutlet weak var carousel: iCarousel!
-    @IBOutlet weak var underScroll: UICollectionView!
+//    @IBOutlet weak var underScroll: UICollectionView!
     @IBOutlet weak var icon: UIImageView!
     @IBOutlet weak var nav_toolbar: UIToolbar!
     var items : NSMutableArray = []
@@ -37,26 +37,56 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: false)
+//        navigationController?.setNavigationBarHidden(true, animated: false)
         
         switch self.carousel.currentItemIndex {
         case 5:
+//            Updates Navigation Bar status
+            let nav = self.navigationController?.navigationBar
+            nav?.tintColor = UIColor.white
+            nav?.topItem?.title = "Act"
+            nav?.prefersLargeTitles = true
+            nav?.backgroundColor = UIColor(red:0.89, green:0.33, blue:0.15, alpha:1.0)
+            nav?.barTintColor = UIColor(red:0.12, green:0.53, blue:0.60, alpha:1.0)
+            let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+            nav?.largeTitleTextAttributes = textAttributes
+            
             carousel.backgroundColor = UIColor(red: 30/255, green: 134/255, blue: 152/255, alpha: 1.0) // #1e8698
             superView.backgroundColor = UIColor(red: 30/255, green: 134/255, blue: 152/255, alpha: 1.0) // #1e8698
-            underScroll.backgroundColor = UIColor(red: 30/255, green: 134/255, blue: 152/255, alpha: 1.0) // #1e8698
+//            underScroll.backgroundColor = UIColor(red: 30/255, green: 134/255, blue: 152/255, alpha: 1.0) // #1e8698
         case 3, 4:
+//            Updates Navigation Bar status
+            let nav = self.navigationController?.navigationBar
+            nav?.tintColor = UIColor.white
+            nav?.topItem?.title = "Investigate"
+            nav?.prefersLargeTitles = true
+            nav?.backgroundColor = UIColor(red:0.89, green:0.33, blue:0.15, alpha:1.0)
+            nav?.barTintColor = UIColor(red:0.67, green:0.81, blue:0.11, alpha:1.0)
+            let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+            nav?.largeTitleTextAttributes = textAttributes
+
             carousel.backgroundColor = UIColor(red: 170/255, green: 207/255, blue: 28/255, alpha: 1.0) // #aacf1c
             superView.backgroundColor = UIColor(red: 170/255, green: 207/255, blue: 28/255, alpha: 1.0) // #aacf1c
-            underScroll.backgroundColor = UIColor(red: 170/255, green: 207/255, blue: 28/255, alpha: 1.0) // #aacf1c
+//            underScroll.backgroundColor = UIColor(red: 170/255, green: 207/255, blue: 28/255, alpha: 1.0) // #aacf1c
         default:
+//            Updates Navigation Bar status
+            let nav = self.navigationController?.navigationBar
+            nav?.tintColor = UIColor.white
+            nav?.topItem?.title = "Engage"
+            nav?.prefersLargeTitles = true
+            nav?.backgroundColor = UIColor(red:0.89, green:0.33, blue:0.15, alpha:1.0)
+            nav?.barTintColor = UIColor(red:0.89, green:0.33, blue:0.15, alpha:1.0)
+            let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+            nav?.largeTitleTextAttributes = textAttributes
+            
             carousel.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
             superView.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
-            underScroll.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
+//            underScroll.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
         }
         carousel.type = iCarouselType.cylinder
         carousel.delegate = self
         carousel.dataSource = self
-        underScroll.delegate = self
+//        underScroll.delegate = self
         
     }
 
@@ -121,7 +151,7 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
         
         container.addSubview(view)
         
-        self.underScroll.showsHorizontalScrollIndicator = false
+//        self.underScroll.showsHorizontalScrollIndicator = false
         return container
     }
     
@@ -133,17 +163,50 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
         
         switch self.carousel.currentItemIndex {
         case 5:
+//            Updates Navigation Bar status
+            let nav = self.navigationController?.navigationBar
+            nav?.tintColor = UIColor.white
+            nav?.topItem?.title = "Act"
+            nav?.prefersLargeTitles = true
+            nav?.backgroundColor = UIColor(red:0.89, green:0.33, blue:0.15, alpha:1.0)
+            nav?.barTintColor = UIColor(red:0.12, green:0.53, blue:0.60, alpha:1.0)
+            let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+            nav?.largeTitleTextAttributes = textAttributes
+            
+//            Updates Background
             carousel.backgroundColor = UIColor(red: 30/255, green: 134/255, blue: 152/255, alpha: 1.0) // #1e8698
             superView.backgroundColor = UIColor(red: 30/255, green: 134/255, blue: 152/255, alpha: 1.0) // #1e8698
-            underScroll.backgroundColor = UIColor(red: 30/255, green: 134/255, blue: 152/255, alpha: 1.0) // #1e8698
+//            underScroll.backgroundColor = UIColor(red: 30/255, green: 134/255, blue: 152/255, alpha: 1.0) // #1e8698
         case 3, 4:
+//            Updates Navigation Bar status
+            let nav = self.navigationController?.navigationBar
+            nav?.tintColor = UIColor.white
+            nav?.topItem?.title = "Investigate"
+            nav?.prefersLargeTitles = true
+            nav?.backgroundColor = UIColor(red:0.89, green:0.33, blue:0.15, alpha:1.0)
+            nav?.barTintColor = UIColor(red:0.67, green:0.81, blue:0.11, alpha:1.0)
+            let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+            nav?.largeTitleTextAttributes = textAttributes
+
+//            Updates Background
             carousel.backgroundColor = UIColor(red: 170/255, green: 207/255, blue: 28/255, alpha: 1.0) // #aacf1c
             superView.backgroundColor = UIColor(red: 170/255, green: 207/255, blue: 28/255, alpha: 1.0) // #aacf1c
-            underScroll.backgroundColor = UIColor(red: 170/255, green: 207/255, blue: 28/255, alpha: 1.0) // #aacf1c
+//            underScroll.backgroundColor = UIColor(red: 170/255, green: 207/255, blue: 28/255, alpha: 1.0) // #aacf1c
         default:
+//            Updates Navigation Bar status
+            let nav = self.navigationController?.navigationBar
+            nav?.tintColor = UIColor.white
+            nav?.topItem?.title = "Engage"
+            nav?.prefersLargeTitles = true
+            nav?.backgroundColor = UIColor(red:0.89, green:0.33, blue:0.15, alpha:1.0)
+            nav?.barTintColor = UIColor(red:0.89, green:0.33, blue:0.15, alpha:1.0)
+            let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+            nav?.largeTitleTextAttributes = textAttributes
+            
+//            Updates Background
             carousel.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
             superView.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
-            underScroll.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
+//            underScroll.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
         }
     }
     
@@ -233,6 +296,17 @@ extension Main: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.height - 5, height: collectionView.frame.height - 5)
+    }
+    
+    func updateNavigationBar(backRed: CGFloat, backGreen: CGFloat, backBlue: CGFloat, tintRed: CGFloat, tintGreen: CGFloat, tintBlue: CGFloat, title: String, largeTitle: Bool) {
+        let nav = self.navigationController?.navigationBar
+        nav?.tintColor = UIColor.white
+        nav?.topItem?.title = title
+        nav?.prefersLargeTitles = largeTitle
+        nav?.backgroundColor = UIColor(red: backRed, green: backGreen, blue: backBlue, alpha:1.0)
+        nav?.barTintColor = UIColor(red: tintRed, green: tintGreen, blue: tintBlue, alpha:1.0)
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        nav?.largeTitleTextAttributes = textAttributes
     }
     
 }

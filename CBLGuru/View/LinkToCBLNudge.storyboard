@@ -13,7 +13,7 @@
         <!--CBLNudge-->
         <scene sceneID="EAF-wr-CHa">
             <objects>
-                <viewController restorationIdentifier="CBLNudge" storyboardIdentifier="CBLNudge" title="CBLNudge" id="N4b-JR-FLw" customClass="LinkToNudgeViewController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="CBLNudge" storyboardIdentifier="CBLNudge" title="CBLNudge" id="N4b-JR-FLw" customClass="LinkToNudgeViewController" customModule="CBLGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Wj-0f-MBu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,7 +63,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cmF-XL-IC6"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="CBLNudge" image="light-bulb-tab" selectedImage="light-bulb-tab" id="n9Y-JI-5oc"/>
                     <navigationItem key="navigationItem" id="60U-Xb-GHx"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2VC-6s-ye2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,5 +75,6 @@
     <resources>
         <image name="CBLNudge" width="176" height="176"/>
         <image name="DownloadOnTheAppStoreButton" width="266" height="92"/>
+        <image name="light-bulb-tab" width="25" height="25"/>
     </resources>
 </document>

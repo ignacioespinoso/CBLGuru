@@ -63,7 +63,7 @@
         <!--GuidingContent-->
         <scene sceneID="Ta3-B5-oX6">
             <objects>
-                <viewController storyboardIdentifier="GuidingContent" title="GuidingContent" id="g7x-UW-nbU" customClass="ListQuestionsViewController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GuidingContent" title="GuidingContent" id="g7x-UW-nbU" customClass="ListQuestionsViewController" customModule="CBLGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u4R-JZ-M9E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,7 +72,7 @@
                                 <rect key="frame" x="0.0" y="84" width="414" height="508"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GuidingCells" rowHeight="203" id="h0z-gq-S0n" customClass="GuidingTableViewCell" customModule="CBLplanner" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GuidingCells" rowHeight="203" id="h0z-gq-S0n" customClass="GuidingTableViewCell" customModule="CBLGuru" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="203"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h0z-gq-S0n" id="MWo-CM-fzw">
@@ -234,7 +234,7 @@
         <!--Synthesis-->
         <scene sceneID="dL6-r3-pbN">
             <objects>
-                <viewController storyboardIdentifier="Synthesis" id="4kE-3k-Ko2" customClass="SynthesisViewController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Synthesis" id="4kE-3k-Ko2" customClass="SynthesisViewController" customModule="CBLGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="Synthesis" id="BkX-qU-361">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,7 +242,7 @@
                             <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="DmW-WB-NCB">
                                 <rect key="frame" x="0.0" y="64" width="414" height="386"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Analysis of the accumulated data identified" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kGN-fj-qyu">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kGN-fj-qyu">
                                         <rect key="frame" x="26" y="40" width="362" height="341"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -319,7 +319,7 @@
         <!--Add Guiding Questions View Controller-->
         <scene sceneID="4F8-LE-7t1">
             <objects>
-                <viewController storyboardIdentifier="AddGuidingQuestion" id="dGU-cD-P2V" customClass="AddGuidingQuestionsViewController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddGuidingQuestion" id="dGU-cD-P2V" customClass="AddGuidingQuestionsViewController" customModule="CBLGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ScA-LA-NtM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -370,7 +370,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="How to help people in the use of CBL?" textAlignment="natural" minimumFontSize="17" disabledBackground="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="oAW-26-5MH">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" disabledBackground="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="oAW-26-5MH">
                                         <rect key="frame" x="20" y="40" width="362" height="18"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" red="0.69636005160000003" green="0.80121171469999997" blue="0.31359621879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -398,7 +398,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CBL official website, CBL Nudge " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GUz-Q0-3nh">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GUz-Q0-3nh">
                                         <rect key="frame" x="20" y="40" width="362" height="17"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" red="0.69636005160000003" green="0.80121171469999997" blue="0.31359621879999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -425,7 +425,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="200" ambiguous="YES" text="Academy students interview" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XiL-k6-0pj">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="200" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XiL-k6-0pj">
                                         <rect key="frame" x="20" y="40" width="362" height="256"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -477,87 +477,8 @@
             </objects>
             <point key="canvasLocation" x="902.89855072463774" y="600"/>
         </scene>
-        <!--Big Idea-->
-        <scene sceneID="OPz-9v-hTg">
-            <objects>
-                <viewController storyboardIdentifier="BigIdea" title="Big Idea" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bW0-0n-Xqb" customClass="bigIdeaController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" restorationIdentifier="BigIdea" id="r7V-AY-kWN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOr-KY-8vD">
-                                <rect key="frame" x="55.666666666666657" y="256" width="303" height="80"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Salvar" backgroundImage="ButtonBackground">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="saveProject:" destination="bW0-0n-Xqb" eventType="touchUpInside" id="nQf-nW-yFZ"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Big Ideas são conceitos amplos que podem ser explorados de várias maneiras, sendo relevantes aos alunos." lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PzG-TF-lfQ">
-                                <rect key="frame" x="20" y="182" width="280" height="62"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B4Q-bt-2ex" userLabel="Big Idea content">
-                                <rect key="frame" x="0.0" y="20" width="414" height="88"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E.g. Estudos e organização" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UvI-aV-rsR">
-                                        <rect key="frame" x="20" y="40" width="362" height="28"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="textColor" red="0.825401783" green="0.36287742849999999" blue="0.21563294529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big Idea" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FpJ-f3-J30">
-                                        <rect key="frame" x="20" y="20" width="362" height="18"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="UvI-aV-rsR" firstAttribute="width" secondItem="FpJ-f3-J30" secondAttribute="width" id="0dj-Fz-Sz1"/>
-                                    <constraint firstAttribute="bottom" secondItem="UvI-aV-rsR" secondAttribute="bottom" constant="20" id="EW7-Rz-J3J"/>
-                                    <constraint firstAttribute="trailing" secondItem="FpJ-f3-J30" secondAttribute="trailing" constant="32" id="FOR-sQ-LdY"/>
-                                    <constraint firstItem="UvI-aV-rsR" firstAttribute="top" secondItem="B4Q-bt-2ex" secondAttribute="top" constant="40" id="MLc-hJ-f4d"/>
-                                    <constraint firstItem="UvI-aV-rsR" firstAttribute="leading" secondItem="B4Q-bt-2ex" secondAttribute="leading" constant="20" id="XWX-5N-dE6"/>
-                                    <constraint firstItem="FpJ-f3-J30" firstAttribute="leading" secondItem="B4Q-bt-2ex" secondAttribute="leading" constant="20" id="ZcU-LI-ZRe"/>
-                                    <constraint firstItem="FpJ-f3-J30" firstAttribute="top" secondItem="B4Q-bt-2ex" secondAttribute="top" constant="20" id="u9v-sF-jW4"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="0.97647720579999997" green="0.9764588475" blue="0.97647124529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="PzG-TF-lfQ" firstAttribute="top" secondItem="B4Q-bt-2ex" secondAttribute="bottom" constant="30" id="54K-Zh-IDJ"/>
-                            <constraint firstItem="PzG-TF-lfQ" firstAttribute="leading" secondItem="0dQ-33-UCF" secondAttribute="leading" constant="20" id="9wE-iu-hip"/>
-                            <constraint firstItem="B4Q-bt-2ex" firstAttribute="leading" secondItem="0dQ-33-UCF" secondAttribute="leading" id="B95-JY-tI0"/>
-                            <constraint firstItem="B4Q-bt-2ex" firstAttribute="top" secondItem="0dQ-33-UCF" secondAttribute="top" id="KgA-t5-FiY"/>
-                            <constraint firstItem="NOr-KY-8vD" firstAttribute="centerX" secondItem="0dQ-33-UCF" secondAttribute="centerX" id="VlP-cv-XPY"/>
-                            <constraint firstItem="B4Q-bt-2ex" firstAttribute="width" secondItem="r7V-AY-kWN" secondAttribute="width" id="aqQ-An-SOY"/>
-                            <constraint firstItem="PzG-TF-lfQ" firstAttribute="top" secondItem="0dQ-33-UCF" secondAttribute="top" constant="118" id="bcQ-AX-aqc"/>
-                            <constraint firstItem="0dQ-33-UCF" firstAttribute="trailing" secondItem="B4Q-bt-2ex" secondAttribute="trailing" id="wcm-Wp-3NE"/>
-                            <constraint firstItem="NOr-KY-8vD" firstAttribute="top" secondItem="PzG-TF-lfQ" secondAttribute="bottom" constant="64" id="xo0-rF-BuY"/>
-                            <constraint firstItem="0dQ-33-UCF" firstAttribute="trailing" secondItem="PzG-TF-lfQ" secondAttribute="trailing" constant="20" id="zUK-gD-5oz"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="0dQ-33-UCF"/>
-                    </view>
-                    <connections>
-                        <outlet property="bigIdea" destination="UvI-aV-rsR" id="IMj-Jf-xhV"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HfV-fz-FZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1771" y="621"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="ButtonBackground" width="303" height="80"/>
         <image name="Default.png" width="320" height="568"/>
         <image name="SaveGuidingsButton" width="303" height="80"/>
     </resources>

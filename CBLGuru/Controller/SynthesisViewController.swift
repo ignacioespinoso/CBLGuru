@@ -53,14 +53,6 @@ class SynthesisViewController: UIViewController {
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         nav?.largeTitleTextAttributes = textAttributes
         
-        let border = CALayer()
-        let width = CGFloat(0.5)
-        border.borderColor = UIColor.darkGray.cgColor
-        border.frame = CGRect(x: 0, y: synthesisTextView.frame.size.height - width, width: synthesisTextView.frame.size.width, height: synthesisTextView.frame.size.height)
-        border.borderWidth = width
-        synthesisTextView.layer.addSublayer(border)
-        synthesisTextView.layer.masksToBounds = true
-        
     }
     
     @IBAction func savePressed(_ sender: UIButton) {

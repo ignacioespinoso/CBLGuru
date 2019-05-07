@@ -65,6 +65,10 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
         navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
+    @IBAction func hereAndBackAgain(_ segue: UIStoryboardSegue) {
+        
+    }
+    
     func numberOfItems(in carousel: iCarousel) -> Int {
         for _ in 0...6 {
             items.add(_ : UIView())

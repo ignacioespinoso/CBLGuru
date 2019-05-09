@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.98" systemVersion="18D42" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18D42" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="GuidingData" representedClassName=".GuidingData" syncable="YES">
         <attribute name="activity" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="project_id" optional="YES" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
@@ -19,8 +19,13 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="has_guiding_data" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GuidingData" inverseName="belongs_to_project" inverseEntity="GuidingData" syncable="YES"/>
     </entity>
+    <entity name="RemindersData" representedClassName="RemindersData" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
         <element name="GuidingData" positionX="0" positionY="90" width="128" height="120"/>
         <element name="ProjectData" positionX="-36" positionY="9" width="128" height="195"/>
+        <element name="RemindersData" positionX="-18" positionY="99" width="128" height="75"/>
     </elements>
 </model>

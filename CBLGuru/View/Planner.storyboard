@@ -126,10 +126,10 @@
             </objects>
             <point key="canvasLocation" x="-955" y="-243"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Reminder View Controller-->
         <scene sceneID="KUl-aJ-rGe">
             <objects>
-                <viewController id="hJY-U3-wwC" sceneMemberID="viewController">
+                <viewController id="hJY-U3-wwC" customClass="AddReminderViewController" customModule="CBLGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n45-1y-jvW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,8 +148,11 @@
                                 </date>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eo-6X-RM6">
-                                <rect key="frame" x="184" y="358" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="185.5" y="358" width="43" height="30"/>
+                                <state key="normal" title="Salvar"/>
+                                <connections>
+                                    <action selector="saveReminder:" destination="hJY-U3-wwC" eventType="touchUpInside" id="RKQ-Dh-sqw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -165,6 +168,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BHp-5s-JiJ"/>
                     </view>
+                    <connections>
+                        <outlet property="date" destination="GyL-qv-6rP" id="CRk-qX-xAR"/>
+                        <outlet property="name" destination="z9a-dC-66a" id="hbj-em-P7E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="52b-GY-sqq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

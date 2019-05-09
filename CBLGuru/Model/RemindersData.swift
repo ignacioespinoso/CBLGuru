@@ -11,7 +11,7 @@ import CoreData
 
 class RemindersData: NSManagedObject {
     @NSManaged public var name: String?
-    @NSManaged public var date: String?
+    @NSManaged public var date: Date?
     
     convenience init() {
         // get context

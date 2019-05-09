@@ -14,6 +14,9 @@
 		155EB9DE2272336500BDA61B /* LinkToCBLNudge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155EB9DD2272336500BDA61B /* LinkToCBLNudge.storyboard */; };
 		155EB9E02272376700BDA61B /* LinkToNudgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155EB9DF2272376700BDA61B /* LinkToNudgeViewController.swift */; };
 		15AE6A3E226F680400E58919 /* SynthesisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE6A3D226F680400E58919 /* SynthesisViewController.swift */; };
+		2AD64833228462AD00A7BE28 /* RemindersDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD64832228462AD00A7BE28 /* RemindersDAO.swift */; };
+		2AD64835228462E400A7BE28 /* RemindersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD64834228462E400A7BE28 /* RemindersData.swift */; };
+		2AD64837228462F600A7BE28 /* Planner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD64836228462F600A7BE28 /* Planner.storyboard */; };
 		801A4243226F562A00651347 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801A4242226F562A00651347 /* DAO.swift */; };
 		801A4245226F563F00651347 /* ProjectDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801A4244226F563F00651347 /* ProjectDAO.swift */; };
 		801A4254226F629900651347 /* ProjectPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 801A4252226F629900651347 /* ProjectPlanner.xcdatamodeld */; };
@@ -52,6 +55,9 @@
 		155EB9DD2272336500BDA61B /* LinkToCBLNudge.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LinkToCBLNudge.storyboard; sourceTree = "<group>"; };
 		155EB9DF2272376700BDA61B /* LinkToNudgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkToNudgeViewController.swift; sourceTree = "<group>"; };
 		15AE6A3D226F680400E58919 /* SynthesisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthesisViewController.swift; sourceTree = "<group>"; };
+		2AD64832228462AD00A7BE28 /* RemindersDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersDAO.swift; sourceTree = "<group>"; };
+		2AD64834228462E400A7BE28 /* RemindersData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersData.swift; sourceTree = "<group>"; };
+		2AD64836228462F600A7BE28 /* Planner.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Planner.storyboard; sourceTree = "<group>"; };
 		801A4242226F562A00651347 /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
 		801A4244226F563F00651347 /* ProjectDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDAO.swift; sourceTree = "<group>"; };
 		801A4253226F629900651347 /* ProjectPlanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjectPlanner.xcdatamodel; sourceTree = "<group>"; };
@@ -130,6 +136,7 @@
 				801A4242226F562A00651347 /* DAO.swift */,
 				801A4244226F563F00651347 /* ProjectDAO.swift */,
 				80A8C820226FC75700B8566C /* GuidingDAO.swift */,
+				2AD64832228462AD00A7BE28 /* RemindersDAO.swift */,
 			);
 			path = DAO;
 			sourceTree = "<group>";
@@ -181,6 +188,7 @@
 				80A8C819226FBEFD00B8566C /* GuidingData.swift */,
 				801A4257226F63C700651347 /* ProjectData.swift */,
 				80DCE987226DFD0100597F37 /* EngageData.swift */,
+				2AD64834228462E400A7BE28 /* RemindersData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,6 +206,7 @@
 				80DCE985226DFA7700597F37 /* Engage.storyboard */,
 				155EB9DD2272336500BDA61B /* LinkToCBLNudge.storyboard */,
 				80F1B46E2272438A009D4015 /* Act.storyboard */,
+				2AD64836228462F600A7BE28 /* Planner.storyboard */,
 				804775E42273702B00B7AA32 /* CBLGuru-Bridging-Header.h */,
 			);
 			path = View;
@@ -290,6 +299,7 @@
 				155EB9DE2272336500BDA61B /* LinkToCBLNudge.storyboard in Resources */,
 				1543A854226DFD7B008E4172 /* Investigate.storyboard in Resources */,
 				80A8C818226FBB8700B8566C /* Default-568h@2x.png in Resources */,
+				2AD64837228462F600A7BE28 /* Planner.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +317,8 @@
 				15413CC82270A02E00C42F71 /* ListQuestionsViewController.swift in Sources */,
 				155EB9E02272376700BDA61B /* LinkToNudgeViewController.swift in Sources */,
 				801A4243226F562A00651347 /* DAO.swift in Sources */,
+				2AD64835228462E400A7BE28 /* RemindersData.swift in Sources */,
+				2AD64833228462AD00A7BE28 /* RemindersDAO.swift in Sources */,
 				804775EA2273708C00B7AA32 /* iCarousel.m in Sources */,
 				80A8C81F226FC59E00B8566C /* Errors.swift in Sources */,
 				80714C072271F587007FCB10 /* ProjectSettingsController.swift in Sources */,

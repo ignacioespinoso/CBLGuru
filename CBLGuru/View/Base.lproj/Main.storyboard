@@ -65,7 +65,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kiq-Pf-F5M"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Projeto" selectedImage="home-tab" id="oWc-lw-xB8"/>
+                    <tabBarItem key="tabBarItem" title="Projeto" image="home-tab" selectedImage="home-tab" id="oWc-lw-xB8"/>
                     <navigationItem key="navigationItem" id="aAk-iJ-dwg"/>
                     <connections>
                         <outlet property="carousel" destination="p66-FC-obU" id="dLP-eR-QsE"/>

@@ -21,70 +21,6 @@
             <point key="canvasLocation" x="1236" y="291"/>
         </scene>
         <!--CBLNudge-->
-        <scene sceneID="fIs-xi-1oJ">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="CBLNudge" storyboardName="LinkToCBLNudge" referencedIdentifier="CBLNudge" id="U8W-vI-cpK" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NKO-3q-Lay" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2637.68115942029" y="-123.21428571428571"/>
-        </scene>
-        <!--Act-->
-        <scene sceneID="n9g-xP-Mg7">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Act" referencedIdentifier="Act" id="TgO-ml-Z9V" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0vZ-Vd-Dxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2609.4202898550725" y="-56.25"/>
-        </scene>
-        <!--Engage-->
-        <scene sceneID="3hd-ad-5VC">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Engage" storyboardName="Engage" referencedIdentifier="Engage" id="nuf-md-94J" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="I6a-hX-6Vy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2623.913043478261" y="-471.42857142857139"/>
-        </scene>
-        <!--BigIdea-->
-        <scene sceneID="pst-3b-kE1">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="BigIdea" storyboardName="Engage" referencedIdentifier="BigIdea" id="GCb-8P-jDF" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1wK-r3-vGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2621.739130434783" y="-437.27678571428572"/>
-        </scene>
-        <!--EssentialQuestion-->
-        <scene sceneID="TCK-9a-8Yd">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="EssentialQuestion" storyboardName="Engage" referencedIdentifier="EssentialQuestion" id="yg7-Ml-uTa" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tc8-Jv-Izg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2666.666666666667" y="-398.4375"/>
-        </scene>
-        <!--Synthesis-->
-        <scene sceneID="lxf-2A-x9k">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Synthesis" storyboardName="Investigate" referencedIdentifier="Synthesis" id="NS1-vT-h8L" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dod-OQ-yY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2631.8840579710145" y="-299.33035714285711"/>
-        </scene>
-        <!--Challenge-->
-        <scene sceneID="4RH-zH-nDW">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Engage" referencedIdentifier="Challenge" id="tTL-6K-EzO" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mJ2-mD-bp5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2631.1594202898555" y="-364.28571428571428"/>
-        </scene>
-        <!--GuidingContent-->
-        <scene sceneID="Aaf-4B-ZfV">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="GuidingContent" storyboardName="Investigate" referencedIdentifier="GuidingContent" id="zvV-P9-1jj" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="smX-gd-zIe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2657.971014492754" y="-246.42857142857142"/>
-        </scene>
-        <!--CBLNudge-->
         <scene sceneID="Ayk-cc-SwY">
             <objects>
                 <viewControllerPlaceholder storyboardName="LinkToCBLNudge" referencedIdentifier="CBLNudge" id="Anm-3d-oxj" sceneMemberID="viewController">
@@ -129,22 +65,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kiq-Pf-F5M"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Projeto" id="oWc-lw-xB8"/>
+                    <tabBarItem key="tabBarItem" title="Projeto" selectedImage="home-tab" id="oWc-lw-xB8"/>
                     <navigationItem key="navigationItem" id="aAk-iJ-dwg"/>
                     <connections>
                         <outlet property="carousel" destination="p66-FC-obU" id="dLP-eR-QsE"/>
                         <outlet property="icon" destination="Xmx-Ze-EHL" id="eNw-ZU-xJM"/>
                         <outlet property="superView" destination="pZ2-5i-TWo" id="kjV-fb-1Z4"/>
-                        <segue destination="nuf-md-94J" kind="show" identifier="engageSegue" id="4WZ-JH-Jxd"/>
-                        <segue destination="GCb-8P-jDF" kind="show" identifier="bigIdeaSegue" id="ptd-zF-Exq"/>
-                        <segue destination="yg7-Ml-uTa" kind="show" identifier="essentialQuestionSegue" id="9q2-zY-tX2"/>
-                        <segue destination="tTL-6K-EzO" kind="show" identifier="challengeSegue" id="tUk-Zi-q6h"/>
-                        <segue destination="NS1-vT-h8L" kind="show" identifier="synthesisSegue" id="cVE-oP-IIM"/>
-                        <segue destination="zvV-P9-1jj" kind="show" identifier="guidingContentSegue" id="8XH-z5-5Uj"/>
-                        <segue destination="Anm-3d-oxj" kind="show" identifier="cblNudgeSegue" id="Wjg-xD-qcI"/>
-                        <segue destination="tEl-SU-RMc" kind="show" identifier="settingsSegue" id="8iv-2f-rnx"/>
-                        <segue destination="U8W-vI-cpK" kind="show" identifier="nudgeSegue" id="50c-nB-UIO"/>
-                        <segue destination="TgO-ml-Z9V" kind="show" identifier="actSegue" id="MKj-Wp-6gV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ygl-Gx-lJP" sceneMemberID="firstResponder"/>
@@ -179,6 +105,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Nsb-Xh-a6f"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="es1-Rz-kt8">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -195,9 +122,6 @@
     </scenes>
     <resources>
         <image name="appIcontela.png" width="16" height="16"/>
+        <image name="home-tab" width="25" height="25"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Lup-E1-gn2"/>
-        <segue reference="z1D-Md-0eW"/>
-    </inferredMetricsTieBreakers>
 </document>

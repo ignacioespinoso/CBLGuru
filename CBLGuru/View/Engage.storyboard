@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MRQ-Ta-2iJ">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <viewController restorationIdentifier="Engage" storyboardIdentifier="Engage" title="Engage" id="r13-sC-eRG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Za2-2W-OlE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eg5-hr-4SL">
@@ -60,7 +60,7 @@
             <objects>
                 <navigationController id="MRQ-Ta-2iJ" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cec-yg-evd">
-                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -76,68 +76,90 @@
             <objects>
                 <viewController storyboardIdentifier="BigIdea" title="Big Idea" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dnW-Yz-Kwy" customClass="bigIdeaController" customModule="CBLGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="BigIdea" id="aaw-59-JgF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6I-mz-sCf">
-                                <rect key="frame" x="8.5" y="300" width="303" height="80"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Salvar" backgroundImage="ButtonBackground">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="saveProject:" destination="dnW-Yz-Kwy" eventType="touchUpInside" id="VW6-IJ-srJ"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Big Ideas são conceitos amplos que podem ser explorados de várias maneiras, sendo relevantes aos alunos." lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pde-H0-nG8">
-                                <rect key="frame" x="20" y="182" width="280" height="62"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jxf-BU-W3C" userLabel="Big Idea content">
-                                <rect key="frame" x="0.0" y="64" width="320" height="88"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="drM-Xc-fAt">
+                                <rect key="frame" x="0.0" y="88" width="414" height="619"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E.g. Estudos e organização" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v4W-5T-QpL">
-                                        <rect key="frame" x="20" y="40" width="268" height="28"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jxf-BU-W3C" userLabel="Big Idea content">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="120.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big Idea" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BC9-vx-lwf">
+                                                <rect key="frame" x="20" y="20" width="55.5" height="18"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E.g. Estudos e organização" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v4W-5T-QpL">
+                                                <rect key="frame" x="20" y="58" width="189" height="18"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="xXu-Gg-n4d"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.825401783" green="0.36287742849999999" blue="0.21563294529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="v4W-5T-QpL" firstAttribute="leading" secondItem="BC9-vx-lwf" secondAttribute="leading" id="Cct-G9-y67"/>
+                                            <constraint firstItem="v4W-5T-QpL" firstAttribute="leading" secondItem="Jxf-BU-W3C" secondAttribute="leading" constant="20" id="M6j-IY-UhD"/>
+                                            <constraint firstItem="v4W-5T-QpL" firstAttribute="top" secondItem="BC9-vx-lwf" secondAttribute="bottom" constant="20" id="gKN-pD-4xu"/>
+                                            <constraint firstItem="BC9-vx-lwf" firstAttribute="top" secondItem="Jxf-BU-W3C" secondAttribute="top" constant="20" id="lEH-PD-r2D"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wou-gs-uz7">
+                                        <rect key="frame" x="0.0" y="220.5" width="414" height="210.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big Ideas são conceitos amplos que podem ser explorados de várias maneiras, sendo relevantes aos alunos." lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pde-H0-nG8">
+                                                <rect key="frame" x="62" y="78" width="290" height="54"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="nFU-6N-WTk"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.97636479139328003" green="0.97653168439865112" blue="0.97635418176651001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="pde-H0-nG8" firstAttribute="width" secondItem="Wou-gs-uz7" secondAttribute="width" multiplier="0.7" id="1gM-uA-p7Q"/>
+                                            <constraint firstItem="pde-H0-nG8" firstAttribute="centerX" secondItem="Wou-gs-uz7" secondAttribute="centerX" id="o4t-36-0st"/>
+                                            <constraint firstItem="pde-H0-nG8" firstAttribute="centerY" secondItem="Wou-gs-uz7" secondAttribute="centerY" id="rBq-q0-ptL"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6I-mz-sCf">
+                                        <rect key="frame" x="55.5" y="531" width="303" height="88"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="p6I-mz-sCf" secondAttribute="height" multiplier="303:88" id="k7w-mt-IHd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="textColor" red="0.825401783" green="0.36287742849999999" blue="0.21563294529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big Idea" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BC9-vx-lwf">
-                                        <rect key="frame" x="20" y="20" width="268" height="18"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <state key="normal" title="Salvar" backgroundImage="ButtonBackground">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveProject:" destination="dnW-Yz-Kwy" eventType="touchUpInside" id="VW6-IJ-srJ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="v4W-5T-QpL" firstAttribute="leading" secondItem="Jxf-BU-W3C" secondAttribute="leading" constant="20" id="9WY-Rg-Ecc"/>
-                                    <constraint firstAttribute="trailing" secondItem="BC9-vx-lwf" secondAttribute="trailing" constant="32" id="NUp-hU-uGF"/>
-                                    <constraint firstItem="v4W-5T-QpL" firstAttribute="width" secondItem="BC9-vx-lwf" secondAttribute="width" id="bJR-2k-y8r"/>
-                                    <constraint firstItem="BC9-vx-lwf" firstAttribute="top" secondItem="Jxf-BU-W3C" secondAttribute="top" constant="20" id="deT-1b-d1L"/>
-                                    <constraint firstAttribute="bottom" secondItem="v4W-5T-QpL" secondAttribute="bottom" constant="20" id="hY4-EM-0cB"/>
-                                    <constraint firstItem="v4W-5T-QpL" firstAttribute="top" secondItem="Jxf-BU-W3C" secondAttribute="top" constant="40" id="mOB-hx-JI4"/>
-                                    <constraint firstItem="BC9-vx-lwf" firstAttribute="leading" secondItem="Jxf-BU-W3C" secondAttribute="leading" constant="20" id="rCa-tb-1T3"/>
+                                    <constraint firstItem="Jxf-BU-W3C" firstAttribute="width" secondItem="drM-Xc-fAt" secondAttribute="width" id="V7J-XA-Aft"/>
                                 </constraints>
-                            </view>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.97647720579999997" green="0.9764588475" blue="0.97647124529999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.97636479139328003" green="0.97653168439865112" blue="0.97635418176651001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pde-H0-nG8" firstAttribute="top" secondItem="RcD-De-2p3" secondAttribute="top" constant="118" id="0Js-iD-LXr"/>
-                            <constraint firstItem="RcD-De-2p3" firstAttribute="trailing" secondItem="pde-H0-nG8" secondAttribute="trailing" constant="20" id="1Ee-eP-pyw"/>
-                            <constraint firstItem="pde-H0-nG8" firstAttribute="top" secondItem="Jxf-BU-W3C" secondAttribute="bottom" constant="30" id="71w-MR-YOb"/>
-                            <constraint firstItem="pde-H0-nG8" firstAttribute="leading" secondItem="RcD-De-2p3" secondAttribute="leading" constant="20" id="72y-Pn-ECM"/>
-                            <constraint firstItem="Jxf-BU-W3C" firstAttribute="leading" secondItem="RcD-De-2p3" secondAttribute="leading" id="Exf-CH-Xa4"/>
-                            <constraint firstItem="Jxf-BU-W3C" firstAttribute="top" secondItem="RcD-De-2p3" secondAttribute="top" id="G9b-s1-RW7"/>
-                            <constraint firstItem="p6I-mz-sCf" firstAttribute="centerX" secondItem="RcD-De-2p3" secondAttribute="centerX" id="Kic-ZV-Ozd"/>
-                            <constraint firstItem="p6I-mz-sCf" firstAttribute="top" secondItem="pde-H0-nG8" secondAttribute="bottom" constant="64" id="db8-bB-YOz"/>
-                            <constraint firstItem="RcD-De-2p3" firstAttribute="trailing" secondItem="Jxf-BU-W3C" secondAttribute="trailing" id="kLe-c9-j9a"/>
-                            <constraint firstItem="Jxf-BU-W3C" firstAttribute="width" secondItem="aaw-59-JgF" secondAttribute="width" id="pk9-tK-sx2"/>
+                            <constraint firstItem="Jxf-BU-W3C" firstAttribute="leading" secondItem="RcD-De-2p3" secondAttribute="leading" id="9YU-G9-8SA"/>
+                            <constraint firstItem="drM-Xc-fAt" firstAttribute="height" secondItem="RcD-De-2p3" secondAttribute="height" multiplier="0.8" id="Az8-P3-tEv"/>
+                            <constraint firstItem="drM-Xc-fAt" firstAttribute="top" secondItem="RcD-De-2p3" secondAttribute="top" id="IjY-tT-Ohq"/>
+                            <constraint firstItem="drM-Xc-fAt" firstAttribute="width" secondItem="RcD-De-2p3" secondAttribute="width" id="JZ8-9R-R4k"/>
+                            <constraint firstItem="drM-Xc-fAt" firstAttribute="leading" secondItem="RcD-De-2p3" secondAttribute="leading" id="OOf-5a-NK2"/>
+                            <constraint firstItem="Jxf-BU-W3C" firstAttribute="centerX" secondItem="RcD-De-2p3" secondAttribute="centerX" id="rjL-2O-TPa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RcD-De-2p3"/>
                     </view>
@@ -147,27 +169,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJM-56-Gzn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665.625" y="20"/>
+            <point key="canvasLocation" x="665.21739130434787" y="19.419642857142858"/>
         </scene>
         <!--Essential Question-->
         <scene sceneID="Hmn-yI-RAg">
             <objects>
                 <viewController storyboardIdentifier="EssentialQuestion" title="Essential Question" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y5Y-2r-Nmh" customClass="EssentialQuestionController" customModule="CBLGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t5r-D9-s8l">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bJw-zQ-Rni" userLabel="Essential question content">
-                                <rect key="frame" x="0.0" y="64" width="320" height="127"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="127"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Essential Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEk-Ew-tDZ">
-                                        <rect key="frame" x="20" y="20" width="268" height="18"/>
+                                        <rect key="frame" x="20" y="20" width="362" height="18"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="raU-7f-Z2v">
-                                        <rect key="frame" x="26" y="40" width="268" height="87"/>
+                                        <rect key="frame" x="26" y="40" width="362" height="87"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" red="0.825401783" green="0.36287742849999999" blue="0.21563294529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -187,13 +209,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKb-nn-k1E">
-                                <rect key="frame" x="20" y="224" width="280" height="90"/>
+                                <rect key="frame" x="20" y="248" width="374" height="72"/>
                                 <string key="text">Criar perguntas essenciais permite aos alunos contextualizar e personalizar a Big Idea. O produto final dessa etapa consiste numa única pergunta essencial que é relevante ao indivíduo ou grupo.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVI-Gm-HLT">
-                                <rect key="frame" x="8.5" y="354" width="303" height="80"/>
+                                <rect key="frame" x="55.5" y="360" width="303" height="80"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="Salvar" backgroundImage="ButtonBackground">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -231,26 +253,26 @@
             <objects>
                 <viewController storyboardIdentifier="Challenge" title="Challenge" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eUO-h2-R73" customClass="ChallengeController" customModule="CBLGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="Challenge" id="507-IW-rjV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdc-zE-oGW">
-                                <rect key="frame" x="26" y="224" width="268" height="72"/>
+                                <rect key="frame" x="26" y="248" width="362" height="54"/>
                                 <string key="text">Challenges transformam as perguntas essenciais em um chamado à ação, estimulando participantes a aprender e desenvolver uma solução factível.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tny-2y-6hI" userLabel="Essential question content">
-                                <rect key="frame" x="0.0" y="64" width="320" height="127"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="127"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Challenge" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHp-nI-aI0">
-                                        <rect key="frame" x="20" y="20" width="268" height="18"/>
+                                        <rect key="frame" x="20" y="20" width="362" height="18"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ks-1A-MRL">
-                                        <rect key="frame" x="26" y="40" width="268" height="87"/>
+                                        <rect key="frame" x="26" y="40" width="362" height="87"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" red="0.825401783" green="0.36287742849999999" blue="0.21563294529999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -270,7 +292,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbB-U8-t6W">
-                                <rect key="frame" x="8.5" y="356" width="303" height="80"/>
+                                <rect key="frame" x="55.5" y="362" width="303" height="80"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="Salvar" backgroundImage="ButtonBackground">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

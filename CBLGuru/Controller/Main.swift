@@ -106,6 +106,9 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
         }
     }
     
+    @IBAction func backToHomeFromSettings(_ segue: UIStoryboardSegue) {
+    }
+    
     func numberOfItems(in carousel: iCarousel) -> Int {
         for _ in 0...6 {
             items.add(_ : UIView())

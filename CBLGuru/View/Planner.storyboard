@@ -82,7 +82,7 @@
                     <navigationItem key="navigationItem" title="Title" id="d9z-Gp-ikF">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="oXe-50-zEj">
                             <connections>
-                                <segue destination="hJY-U3-wwC" kind="show" id="ZVT-sx-Ovh"/>
+                                <segue destination="hJY-U3-wwC" kind="show" identifier="addOrEditReminder" id="ZVT-sx-Ovh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

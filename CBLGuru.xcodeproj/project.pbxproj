@@ -19,6 +19,7 @@
 		2AD64837228462F600A7BE28 /* Planner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD64836228462F600A7BE28 /* Planner.storyboard */; };
 		2AD64839228463BD00A7BE28 /* RemindersServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD64838228463BD00A7BE28 /* RemindersServices.swift */; };
 		2AD6483B22846F8100A7BE28 /* AddReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD6483A22846F8100A7BE28 /* AddReminderViewController.swift */; };
+		2AD648412284973F00A7BE28 /* ListRemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD648402284973F00A7BE28 /* ListRemindersViewController.swift */; };
 		801A4243226F562A00651347 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801A4242226F562A00651347 /* DAO.swift */; };
 		801A4245226F563F00651347 /* ProjectDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801A4244226F563F00651347 /* ProjectDAO.swift */; };
 		801A4254226F629900651347 /* ProjectPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 801A4252226F629900651347 /* ProjectPlanner.xcdatamodeld */; };
@@ -62,6 +63,7 @@
 		2AD64836228462F600A7BE28 /* Planner.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Planner.storyboard; sourceTree = "<group>"; };
 		2AD64838228463BD00A7BE28 /* RemindersServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersServices.swift; sourceTree = "<group>"; };
 		2AD6483A22846F8100A7BE28 /* AddReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderViewController.swift; sourceTree = "<group>"; };
+		2AD648402284973F00A7BE28 /* ListRemindersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRemindersViewController.swift; sourceTree = "<group>"; };
 		801A4242226F562A00651347 /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
 		801A4244226F563F00651347 /* ProjectDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDAO.swift; sourceTree = "<group>"; };
 		801A4253226F629900651347 /* ProjectPlanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProjectPlanner.xcdatamodel; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				155EB9DF2272376700BDA61B /* LinkToNudgeViewController.swift */,
 				80F1B46C22724376009D4015 /* ActController.swift */,
 				2AD6483A22846F8100A7BE28 /* AddReminderViewController.swift */,
+				2AD648402284973F00A7BE28 /* ListRemindersViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			files = (
 				1543A856226E0CEC008E4172 /* AddGuidingQuestionsViewController.swift in Sources */,
 				15AE6A3E226F680400E58919 /* SynthesisViewController.swift in Sources */,
+				2AD648412284973F00A7BE28 /* ListRemindersViewController.swift in Sources */,
 				80C47F772268DBE3009A7EC5 /* Main.swift in Sources */,
 				80C47F752268DBE3009A7EC5 /* AppDelegate.swift in Sources */,
 				15413CC82270A02E00C42F71 /* ListQuestionsViewController.swift in Sources */,

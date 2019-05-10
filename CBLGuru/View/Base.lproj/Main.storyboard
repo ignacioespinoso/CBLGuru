@@ -77,7 +77,8 @@
                         <segue destination="dGu-8H-Z25" kind="show" identifier="synthesisSegue" id="Shc-CK-APC"/>
                         <segue destination="nQg-YJ-KHT" kind="show" identifier="guidingContentSegue" id="Yw5-RJ-xHH"/>
                         <segue destination="NoC-Hg-THm" kind="show" identifier="actSegue" id="w3h-Qp-zW4"/>
-                        <segue destination="tEl-SU-RMc" kind="show" identifier="SettingsSegue" id="ijw-z5-afo"/>
+                        <segue destination="tEl-SU-RMc" kind="show" identifier="settingsSegue" id="ijw-z5-afo"/>
+                        <segue destination="DUm-Oo-keB" kind="show" identifier="introSegue" id="Ehx-SP-2ZB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ygl-Gx-lJP" sceneMemberID="firstResponder"/>
@@ -131,6 +132,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yui-sO-vwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2710" y="-149"/>
+        </scene>
+        <!--IntroScreen-->
+        <scene sceneID="qEh-iw-hhh">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="IntroScreen" storyboardName="IntroScreen" referencedIdentifier="IntroScreen" id="DUm-Oo-keB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jlK-pG-YKE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2791" y="-99"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5aG-CY-9NK">

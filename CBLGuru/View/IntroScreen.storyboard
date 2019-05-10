@@ -13,7 +13,7 @@
         <!--Intro Screen View Controller-->
         <scene sceneID="pYM-Ng-mwc">
             <objects>
-                <viewController id="9vQ-IE-qs9" customClass="IntroScreenViewController" customModule="CBLGuru" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IntroScreen" id="9vQ-IE-qs9" customClass="IntroScreenViewController" customModule="CBLGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7gW-D4-uo9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

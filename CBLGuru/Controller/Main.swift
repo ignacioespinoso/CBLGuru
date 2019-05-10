@@ -74,7 +74,7 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
         super.viewDidLoad()
         
         if (isTheFirstLaunch()) {
-            self.performSegue(withIdentifier: "settingsSegue", sender: nil)
+            self.performSegue(withIdentifier: "introSegue", sender: nil)
         }
     }
     

@@ -13,7 +13,7 @@
         <!--Configurações-->
         <scene sceneID="Emh-6s-K08">
             <objects>
-                <viewController storyboardIdentifier="Settings" title="Configurações" id="66u-bl-elS" customClass="ProjectSettingsController" customModule="CBLGuru" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="Settings" storyboardIdentifier="Settings" title="Configurações" id="66u-bl-elS" customClass="ProjectSettingsController" customModule="CBLGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RVR-cC-4Gp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

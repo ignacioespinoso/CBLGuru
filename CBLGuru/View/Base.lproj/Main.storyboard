@@ -72,11 +72,12 @@
                         <outlet property="icon" destination="Xmx-Ze-EHL" id="eNw-ZU-xJM"/>
                         <outlet property="superView" destination="pZ2-5i-TWo" id="kjV-fb-1Z4"/>
                         <segue destination="YIG-6p-DpQ" kind="show" identifier="bigIdeaSegue" id="vht-F9-LkK"/>
-                        <segue destination="k72-bh-eXt" kind="show" identifier="EssentialQuestionSegue" id="Xl0-yH-OfX"/>
-                        <segue destination="yop-Pt-B1f" kind="show" identifier="ChallengeSegue" id="hn7-i4-owP"/>
-                        <segue destination="dGu-8H-Z25" kind="show" identifier="SynthesisSegue" id="Shc-CK-APC"/>
-                        <segue destination="nQg-YJ-KHT" kind="show" identifier="GuidingContentSegue" id="Yw5-RJ-xHH"/>
-                        <segue destination="NoC-Hg-THm" kind="show" identifier="ActSegue" id="w3h-Qp-zW4"/>
+                        <segue destination="k72-bh-eXt" kind="show" identifier="essentialQuestionSegue" id="Xl0-yH-OfX"/>
+                        <segue destination="yop-Pt-B1f" kind="show" identifier="challengeSegue" id="hn7-i4-owP"/>
+                        <segue destination="dGu-8H-Z25" kind="show" identifier="synthesisSegue" id="Shc-CK-APC"/>
+                        <segue destination="nQg-YJ-KHT" kind="show" identifier="guidingContentSegue" id="Yw5-RJ-xHH"/>
+                        <segue destination="NoC-Hg-THm" kind="show" identifier="actSegue" id="w3h-Qp-zW4"/>
+                        <segue destination="tEl-SU-RMc" kind="show" identifier="SettingsSegue" id="ijw-z5-afo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ygl-Gx-lJP" sceneMemberID="firstResponder"/>
@@ -178,4 +179,7 @@
         <image name="appIcontela.png" width="16" height="16"/>
         <image name="home-tab" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ijw-z5-afo"/>
+    </inferredMetricsTieBreakers>
 </document>

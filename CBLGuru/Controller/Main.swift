@@ -48,13 +48,13 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
             superView.backgroundColor = UIColor(red: 30/255, green: 134/255, blue: 152/255, alpha: 1.0) // #1e8698
         case 3, 4:
 //            Updates Navigation Bar status
-            updateNavigationBar(backRed: 0.89, backGreen: 0.33, backBlue: 0.15, tintRed: 0.67, tintGreen: 0.81, tintBlue: 0.11, title: "Investigate", largeTitle: true)
+            updateNavigationBar(backRed: 0.79, backGreen: 0.23, backBlue: 0.05, tintRed: 0.57, tintGreen: 0.71, tintBlue: 0.01, title: "Investigate", largeTitle: true)
 
             carousel.backgroundColor = UIColor(red: 170/255, green: 207/255, blue: 28/255, alpha: 1.0) // #aacf1c
             superView.backgroundColor = UIColor(red: 170/255, green: 207/255, blue: 28/255, alpha: 1.0) // #aacf1c
         default:
 //            Updates Navigation Bar status
-            updateNavigationBar(backRed: 0.89, backGreen: 0.33, backBlue: 0.15, tintRed: 0.89, tintGreen: 0.33, tintBlue: 0.15, title: "Engage", largeTitle: true)
+            updateNavigationBar(backRed: 0.79, backGreen: 0.23, backBlue: 0.05, tintRed: 0.79, tintGreen: 0.23, tintBlue: 0.05, title: "Engage", largeTitle: true)
             
             carousel.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
             superView.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327
@@ -186,7 +186,7 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
             superView.backgroundColor = UIColor(red: 30/255, green: 134/255, blue: 152/255, alpha: 1.0) // #1e8698
         case 3, 4:
 //            Updates Navigation Bar status
-            updateNavigationBar(backRed: 0.89, backGreen: 0.33, backBlue: 0.15, tintRed: 0.67, tintGreen: 0.81, tintBlue: 0.11, title: "Investigate", largeTitle: true)
+            updateNavigationBar(backRed: 0.79, backGreen: 0.23, backBlue: 0.05, tintRed: 0.57, tintGreen: 0.71, tintBlue: 0.01, title: "Investigate", largeTitle: true)
 
 //            Updates Background
             carousel.backgroundColor = UIColor(red: 170/255, green: 207/255, blue: 28/255, alpha: 1.0) // #aacf1c
@@ -194,7 +194,7 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
 
         default:
 //            Updates Navigation Bar status
-            updateNavigationBar(backRed: 0.89, backGreen: 0.33, backBlue: 0.15, tintRed: 0.89, tintGreen: 0.33, tintBlue: 0.15, title: "Engage", largeTitle: true)
+            updateNavigationBar(backRed: 0.79, backGreen: 0.23, backBlue: 0.05, tintRed: 0.79, tintGreen: 0.23, tintBlue: 0.05, title: "Engage", largeTitle: true)
             
 //            Updates Background
             carousel.backgroundColor = UIColor(red: 227/255, green: 83/255, blue: 39/255, alpha: 1.0) // #e35327

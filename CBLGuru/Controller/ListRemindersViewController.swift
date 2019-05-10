@@ -15,7 +15,9 @@ class ListRemindersViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround()    }
+        self.hideKeyboardWhenTappedAround()
+        
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         // call super

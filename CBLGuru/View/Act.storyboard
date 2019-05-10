@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Act-->
+        <scene sceneID="gAw-FO-Sv3">
+            <objects>
+                <viewController storyboardIdentifier="Act" title="Act" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mip-w3-JSM" customClass="ActController" customModule="CBLplanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EQe-bR-npy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L1D-Ql-Z5Y">
+                                <rect key="frame" x="20" y="175" width="374" height="246"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="246" id="rRV-5x-erf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adicione uma imagem representativa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vV5-59-01a">
+                                <rect key="frame" x="20" y="108" width="374" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VkZ-Fs-QlX">
+                                <rect key="frame" x="0.0" y="441" width="414" height="222"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escreva suas Acts:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7B-Jx-Uhy">
+                                        <rect key="frame" x="20" y="20" width="374" height="18"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Desenvolver conceitos de uma possível solução" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0MQ-mM-5en">
+                                        <rect key="frame" x="20" y="40" width="374" height="162"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.1176470588" green="0.52549019610000003" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="0MQ-mM-5en" secondAttribute="bottom" constant="20" id="41v-eJ-BX7"/>
+                                    <constraint firstItem="R7B-Jx-Uhy" firstAttribute="top" secondItem="VkZ-Fs-QlX" secondAttribute="top" constant="20" id="EH7-kB-CmI"/>
+                                    <constraint firstItem="R7B-Jx-Uhy" firstAttribute="leading" secondItem="VkZ-Fs-QlX" secondAttribute="leading" constant="20" id="aeq-9B-fZA"/>
+                                    <constraint firstItem="0MQ-mM-5en" firstAttribute="top" secondItem="VkZ-Fs-QlX" secondAttribute="top" constant="40" id="csf-iT-Rvt"/>
+                                    <constraint firstItem="R7B-Jx-Uhy" firstAttribute="centerX" secondItem="VkZ-Fs-QlX" secondAttribute="centerX" id="pBh-gf-HA9"/>
+                                    <constraint firstItem="0MQ-mM-5en" firstAttribute="leading" secondItem="VkZ-Fs-QlX" secondAttribute="leading" constant="20" id="wvq-je-c9D"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VP3-AI-q8g">
+                                <rect key="frame" x="20" y="146" width="374" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Clique aqui para escolher uma foto">
+                                    <color key="titleColor" red="0.1176470588" green="0.52549019610000003" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickPickImageWith_sender:" destination="Mip-w3-JSM" eventType="touchUpInside" id="p80-X6-0pV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Pk-Yz-HvD">
+                                <rect key="frame" x="75" y="718" width="264" height="66"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Save" backgroundImage="actButton">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="savePressed:" destination="Mip-w3-JSM" eventType="touchUpInside" id="JHM-u4-Ga2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0MQ-mM-5en" firstAttribute="width" secondItem="vV5-59-01a" secondAttribute="width" id="1mU-F7-Jje"/>
+                            <constraint firstItem="L1D-Ql-Z5Y" firstAttribute="top" secondItem="VP3-AI-q8g" secondAttribute="bottom" constant="1" id="81Q-dh-8wB"/>
+                            <constraint firstItem="VkZ-Fs-QlX" firstAttribute="width" secondItem="EQe-bR-npy" secondAttribute="width" id="8Ns-Ea-2xK"/>
+                            <constraint firstItem="1Pk-Yz-HvD" firstAttribute="leading" secondItem="9yD-Fe-TeJ" secondAttribute="leading" constant="75" id="BQc-b7-an0"/>
+                            <constraint firstItem="L1D-Ql-Z5Y" firstAttribute="width" secondItem="vV5-59-01a" secondAttribute="width" id="EnA-li-swr"/>
+                            <constraint firstItem="R7B-Jx-Uhy" firstAttribute="width" secondItem="vV5-59-01a" secondAttribute="width" id="JSx-E6-Rlp"/>
+                            <constraint firstItem="1Pk-Yz-HvD" firstAttribute="centerX" secondItem="VkZ-Fs-QlX" secondAttribute="centerX" id="Mfd-6V-8Gw"/>
+                            <constraint firstItem="VkZ-Fs-QlX" firstAttribute="top" secondItem="L1D-Ql-Z5Y" secondAttribute="bottom" constant="20" id="Ymk-oZ-eai"/>
+                            <constraint firstItem="vV5-59-01a" firstAttribute="leading" secondItem="9yD-Fe-TeJ" secondAttribute="leading" constant="20" id="Zim-Oo-XLx"/>
+                            <constraint firstAttribute="bottom" secondItem="VkZ-Fs-QlX" secondAttribute="bottom" constant="233" id="c0u-PO-Cgc"/>
+                            <constraint firstItem="VkZ-Fs-QlX" firstAttribute="centerX" secondItem="9yD-Fe-TeJ" secondAttribute="centerX" id="dMy-NC-Ud5"/>
+                            <constraint firstItem="VP3-AI-q8g" firstAttribute="centerX" secondItem="L1D-Ql-Z5Y" secondAttribute="centerX" id="fyy-gm-Ank"/>
+                            <constraint firstItem="L1D-Ql-Z5Y" firstAttribute="centerX" secondItem="9yD-Fe-TeJ" secondAttribute="centerX" id="jSR-QD-Cg1"/>
+                            <constraint firstItem="vV5-59-01a" firstAttribute="top" secondItem="9yD-Fe-TeJ" secondAttribute="top" constant="20" id="lvu-mq-Imo"/>
+                            <constraint firstItem="1Pk-Yz-HvD" firstAttribute="top" secondItem="VkZ-Fs-QlX" secondAttribute="bottom" constant="55" id="mzQ-Jn-9a5"/>
+                            <constraint firstItem="VP3-AI-q8g" firstAttribute="width" secondItem="vV5-59-01a" secondAttribute="width" id="pgx-B8-QbN"/>
+                            <constraint firstItem="VP3-AI-q8g" firstAttribute="top" secondItem="vV5-59-01a" secondAttribute="bottom" constant="20" id="wyf-zf-8ZI"/>
+                            <constraint firstItem="9yD-Fe-TeJ" firstAttribute="bottom" secondItem="1Pk-Yz-HvD" secondAttribute="bottom" constant="78" id="yIv-yE-Vo8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9yD-Fe-TeJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Act" id="sFh-Br-kjO"/>
+                    <connections>
+                        <outlet property="actTextView" destination="0MQ-mM-5en" id="iKD-xg-9ew"/>
+                        <outlet property="chooseBuuton" destination="VP3-AI-q8g" id="Uko-9Y-udk"/>
+                        <outlet property="imageView" destination="L1D-Ql-Z5Y" id="Mtz-L6-H3I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JKx-LQ-V3T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1073.913043478261" y="-107.14285714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mtM-Qa-Ple">
+            <objects>
+                <navigationController id="gMM-8z-RMg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yT6-3g-eiO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Mip-w3-JSM" kind="relationship" relationship="rootViewController" id="Q9z-1Q-fWF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3t7-B5-Hdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82" y="-107"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="actButton" width="101" height="27"/>
+    </resources>
+</document>

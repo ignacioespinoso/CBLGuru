@@ -13,7 +13,7 @@
         <!--Configurações-->
         <scene sceneID="Emh-6s-K08">
             <objects>
-                <viewController storyboardIdentifier="Settings" title="Configurações" id="66u-bl-elS" customClass="ProjectSettingsController" customModule="CBLGuru" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="Settings" storyboardIdentifier="Settings" title="Configurações" id="66u-bl-elS" customClass="ProjectSettingsController" customModule="CBLGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RVR-cC-4Gp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,6 +86,7 @@
                                 <state key="normal" title="Salvar" backgroundImage="ButtonBackground"/>
                                 <connections>
                                     <action selector="saveProject:" destination="66u-bl-elS" eventType="touchUpInside" id="Nh7-WP-HTu"/>
+                                    <segue destination="nEY-fb-bFN" kind="unwind" unwindAction="backToHomeFromSettings:" id="q0j-Ad-n3g"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="90X-Bt-sCY" userLabel="Members">
@@ -150,6 +151,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fSE-6o-r9M" sceneMemberID="firstResponder"/>
+                <exit id="nEY-fb-bFN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1717.3913043478262" y="-1036.6071428571429"/>
         </scene>

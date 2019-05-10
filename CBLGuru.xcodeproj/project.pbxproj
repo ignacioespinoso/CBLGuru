@@ -11,8 +11,16 @@
 		15413CCC2270B64100C42F71 /* GuidingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15413CCB2270B64100C42F71 /* GuidingTableViewCell.swift */; };
 		1543A854226DFD7B008E4172 /* Investigate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1543A853226DFD7B008E4172 /* Investigate.storyboard */; };
 		1543A856226E0CEC008E4172 /* AddGuidingQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1543A855226E0CEC008E4172 /* AddGuidingQuestionsViewController.swift */; };
+		155BE2522281FF1000A0DC20 /* IntroScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155BE2512281FF1000A0DC20 /* IntroScreen.storyboard */; };
+		155BE254228201CA00A0DC20 /* IntroScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155BE253228201CA00A0DC20 /* IntroScreenViewController.swift */; };
 		155EB9DE2272336500BDA61B /* LinkToCBLNudge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155EB9DD2272336500BDA61B /* LinkToCBLNudge.storyboard */; };
 		155EB9E02272376700BDA61B /* LinkToNudgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155EB9DF2272376700BDA61B /* LinkToNudgeViewController.swift */; };
+		1561D51F2284562B009B5979 /* IntroEngageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1561D51E2284562B009B5979 /* IntroEngageViewController.swift */; };
+		158CC37022834461000DC9EC /* NavigationBarConfigController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158CC36F22834461000DC9EC /* NavigationBarConfigController.swift */; };
+		158CC372228351CD000DC9EC /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158CC371228351CD000DC9EC /* Stage.swift */; };
+		158CC374228387A0000DC9EC /* IntroInvestigateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158CC373228387A0000DC9EC /* IntroInvestigateViewController.swift */; };
+		158CC376228387FA000DC9EC /* IntroActViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158CC375228387FA000DC9EC /* IntroActViewController.swift */; };
+		158CC3782283881E000DC9EC /* IntroSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158CC3772283881E000DC9EC /* IntroSettingsViewController.swift */; };
 		15AE6A3E226F680400E58919 /* SynthesisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE6A3D226F680400E58919 /* SynthesisViewController.swift */; };
 		2AB8BE59228573A100A1F65A /* RemindersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB8BE58228573A100A1F65A /* RemindersTableViewCell.swift */; };
 		2AD64833228462AD00A7BE28 /* RemindersDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD64832228462AD00A7BE28 /* RemindersDAO.swift */; };
@@ -56,8 +64,16 @@
 		15413CCB2270B64100C42F71 /* GuidingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidingTableViewCell.swift; sourceTree = "<group>"; };
 		1543A853226DFD7B008E4172 /* Investigate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Investigate.storyboard; sourceTree = "<group>"; };
 		1543A855226E0CEC008E4172 /* AddGuidingQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGuidingQuestionsViewController.swift; sourceTree = "<group>"; };
+		155BE2512281FF1000A0DC20 /* IntroScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IntroScreen.storyboard; sourceTree = "<group>"; };
+		155BE253228201CA00A0DC20 /* IntroScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroScreenViewController.swift; sourceTree = "<group>"; };
 		155EB9DD2272336500BDA61B /* LinkToCBLNudge.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LinkToCBLNudge.storyboard; sourceTree = "<group>"; };
 		155EB9DF2272376700BDA61B /* LinkToNudgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkToNudgeViewController.swift; sourceTree = "<group>"; };
+		1561D51E2284562B009B5979 /* IntroEngageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroEngageViewController.swift; sourceTree = "<group>"; };
+		158CC36F22834461000DC9EC /* NavigationBarConfigController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarConfigController.swift; sourceTree = "<group>"; };
+		158CC371228351CD000DC9EC /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
+		158CC373228387A0000DC9EC /* IntroInvestigateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroInvestigateViewController.swift; sourceTree = "<group>"; };
+		158CC375228387FA000DC9EC /* IntroActViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroActViewController.swift; sourceTree = "<group>"; };
+		158CC3772283881E000DC9EC /* IntroSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroSettingsViewController.swift; sourceTree = "<group>"; };
 		15AE6A3D226F680400E58919 /* SynthesisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthesisViewController.swift; sourceTree = "<group>"; };
 		2AB8BE58228573A100A1F65A /* RemindersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersTableViewCell.swift; sourceTree = "<group>"; };
 		2AD64832228462AD00A7BE28 /* RemindersDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersDAO.swift; sourceTree = "<group>"; };
@@ -198,6 +214,7 @@
 				801A4257226F63C700651347 /* ProjectData.swift */,
 				80DCE987226DFD0100597F37 /* EngageData.swift */,
 				2AD64834228462E400A7BE28 /* RemindersData.swift */,
+				158CC371228351CD000DC9EC /* Stage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -217,6 +234,7 @@
 				80F1B46E2272438A009D4015 /* Act.storyboard */,
 				2AD64836228462F600A7BE28 /* Planner.storyboard */,
 				804775E42273702B00B7AA32 /* CBLGuru-Bridging-Header.h */,
+				155BE2512281FF1000A0DC20 /* IntroScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -239,6 +257,12 @@
 				2AD6483A22846F8100A7BE28 /* AddReminderViewController.swift */,
 				2AD648402284973F00A7BE28 /* ListRemindersViewController.swift */,
 				2AB8BE58228573A100A1F65A /* RemindersTableViewCell.swift */,
+				155BE253228201CA00A0DC20 /* IntroScreenViewController.swift */,
+				158CC36F22834461000DC9EC /* NavigationBarConfigController.swift */,
+				158CC373228387A0000DC9EC /* IntroInvestigateViewController.swift */,
+				158CC375228387FA000DC9EC /* IntroActViewController.swift */,
+				158CC3772283881E000DC9EC /* IntroSettingsViewController.swift */,
+				1561D51E2284562B009B5979 /* IntroEngageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -312,6 +336,7 @@
 				1543A854226DFD7B008E4172 /* Investigate.storyboard in Resources */,
 				80A8C818226FBB8700B8566C /* Default-568h@2x.png in Resources */,
 				2AD64837228462F600A7BE28 /* Planner.storyboard in Resources */,
+				155BE2522281FF1000A0DC20 /* IntroScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +354,7 @@
 				80C47F752268DBE3009A7EC5 /* AppDelegate.swift in Sources */,
 				15413CC82270A02E00C42F71 /* ListQuestionsViewController.swift in Sources */,
 				155EB9E02272376700BDA61B /* LinkToNudgeViewController.swift in Sources */,
+				155BE254228201CA00A0DC20 /* IntroScreenViewController.swift in Sources */,
 				801A4243226F562A00651347 /* DAO.swift in Sources */,
 				2AD64835228462E400A7BE28 /* RemindersData.swift in Sources */,
 				2AD64833228462AD00A7BE28 /* RemindersDAO.swift in Sources */,
@@ -336,10 +362,13 @@
 				80A8C81F226FC59E00B8566C /* Errors.swift in Sources */,
 				80714C072271F587007FCB10 /* ProjectSettingsController.swift in Sources */,
 				801A425B226F63C700651347 /* ProjectData.swift in Sources */,
+				158CC376228387FA000DC9EC /* IntroActViewController.swift in Sources */,
+				1561D51F2284562B009B5979 /* IntroEngageViewController.swift in Sources */,
 				803C81D2226F483100704B41 /* QueueManager.swift in Sources */,
 				803C81CB226F3B0900704B41 /* ChallengeController.swift in Sources */,
 				803C81C9226F3AEE00704B41 /* EssentialQuestionController.swift in Sources */,
 				80A8C821226FC75700B8566C /* GuidingDAO.swift in Sources */,
+				158CC372228351CD000DC9EC /* Stage.swift in Sources */,
 				80A8C81B226FBEFD00B8566C /* GuidingData.swift in Sources */,
 				2AD64839228463BD00A7BE28 /* RemindersServices.swift in Sources */,
 				803C81CD226F3B6600704B41 /* bigIdeaController.swift in Sources */,
@@ -351,9 +380,12 @@
 				80C47F772268DBE3009A7EC5 /* Main.swift in Sources */,
 				80F1B468227234D8009D4015 /* Common.swift in Sources */,
 				80C47F752268DBE3009A7EC5 /* AppDelegate.swift in Sources */,
+				158CC37022834461000DC9EC /* NavigationBarConfigController.swift in Sources */,
 				80F1B46D22724376009D4015 /* ActController.swift in Sources */,
 				803C81D4226F488500704B41 /* ProjectServices.swift in Sources */,
 				2AB8BE59228573A100A1F65A /* RemindersTableViewCell.swift in Sources */,
+				158CC3782283881E000DC9EC /* IntroSettingsViewController.swift in Sources */,
+				158CC374228387A0000DC9EC /* IntroInvestigateViewController.swift in Sources */,
 				80A8C823226FC82E00B8566C /* GuidingServices.swift in Sources */,
 				15413CCC2270B64100C42F71 /* GuidingTableViewCell.swift in Sources */,
 			);
@@ -504,7 +536,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C7CS39R779;
+				DEVELOPMENT_TEAM = B73YH55T95;
 				INFOPLIST_FILE = CBLGuru/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -527,7 +559,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C7CS39R779;
+				DEVELOPMENT_TEAM = B73YH55T95;
 				INFOPLIST_FILE = CBLGuru/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -16,6 +16,7 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
     @IBOutlet weak var icon: UIImageView!
     @IBOutlet weak var nav_toolbar: UIToolbar!
     var items : NSMutableArray = []
+    @objc var project:ProjectData?
     
     let fases: [String] = ["Big Idea", "Essential Question", "Challenge", "Guiding", "Synthesis", "Solution Concept"]
     let fasesBody: [String] = ["Big Idea é um conceito amplo que pode ser explorado de várias maneiras e é relevante para os alunos e a comunidade em geral.",
@@ -67,6 +68,45 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if (isTheFirstLaunch()) {
+            self.performSegue(withIdentifier: "settingsSegue", sender: nil)
+        }
+    }
+    
+    func isTheFirstLaunch() -> Bool {
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        if launchedBefore  {
+            return false
+        } else {
+            UserDefaults.standard.set(true, forKey: "launchedBefore")
+            return true
+        }
+    }
+    
+    @IBAction func backToHomeFromIntro(_ segue: UIStoryboardSegue) {
+        ProjectServices.getFirstProject { (error, project) in
+            if (error == nil) {
+                // assign project
+                self.project = project
+                
+                OperationQueue.main.addOperation {
+                    if(self.project?.name == nil) {
+                        self.performSegue(withIdentifier: "settingsSegue", sender: nil)
+                    }
+                }
+            }
+            else {
+                print("Unable to find first project")
+            }
+        }
+    }
+    
+    @IBAction func backToHomeFromSettings(_ segue: UIStoryboardSegue) {
     }
     
     func numberOfItems(in carousel: iCarousel) -> Int {
@@ -201,55 +241,7 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
     //            self.carousel.removeItem(at: index, animated: true)
     //        }
     //    }
-}
 
-extension Main: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return scrollImages.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "functionCell", for: indexPath) //as! CollectionViewCell
-        
-        cell.backgroundColor = .white
-        cell.sizeThatFits(CGSize(width: collectionView.frame.height - 45, height: collectionView.frame.height - 45))
-        cell.layer.cornerRadius = 5
-        cell.layer.shadowOffset = CGSize(width: 5.0, height: 5.0);
-        cell.layer.shadowRadius = 5;
-        cell.layer.shadowOpacity = 0.1;
-        cell.alpha = 0.5
-        
-        
-        
-        let image : UIImageView = UIImageView(image: UIImage(named: self.scrollImages[indexPath.row]))
-        image.frame = CGRect(x: cell.frame.width * 0.2, y: cell.frame.width * 0.1, width: cell.frame.width * 0.6, height: cell.frame.width * 0.6)
-        image.contentMode = UIView.ContentMode.scaleAspectFit
-        
-        let label : UILabel = UILabel(frame: CGRect(x: 0, y: cell.frame.width * 0.8, width: cell.frame.width, height: 20))
-        label.textAlignment = .center
-        label.text = self.scrollLabels[indexPath.row]
-        label.font = label.font.withSize(13)
-        
-        cell.addSubview(label)
-        cell.addSubview(image)
-        return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.row)
-        
-        if (indexPath.row == 0) {
-            performSegue(withIdentifier: "settingsSegue", sender: nil)
-        } else if (indexPath.row == 1) {
-            performSegue(withIdentifier: "nudgeSegue", sender: nil)
-        }
-        
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.height - 5, height: collectionView.frame.height - 5)
-    }
-    
     func updateNavigationBar(backRed: CGFloat, backGreen: CGFloat, backBlue: CGFloat, tintRed: CGFloat, tintGreen: CGFloat, tintBlue: CGFloat, title: String, largeTitle: Bool) {
         let nav = self.navigationController?.navigationBar
         nav?.tintColor = UIColor.white

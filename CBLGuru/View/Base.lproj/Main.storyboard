@@ -71,11 +71,66 @@
                         <outlet property="carousel" destination="p66-FC-obU" id="dLP-eR-QsE"/>
                         <outlet property="icon" destination="Xmx-Ze-EHL" id="eNw-ZU-xJM"/>
                         <outlet property="superView" destination="pZ2-5i-TWo" id="kjV-fb-1Z4"/>
+                        <segue destination="YIG-6p-DpQ" kind="show" identifier="bigIdeaSegue" id="vht-F9-LkK"/>
+                        <segue destination="k72-bh-eXt" kind="show" identifier="essentialQuestionSegue" id="Xl0-yH-OfX"/>
+                        <segue destination="yop-Pt-B1f" kind="show" identifier="challengeSegue" id="hn7-i4-owP"/>
+                        <segue destination="dGu-8H-Z25" kind="show" identifier="synthesisSegue" id="Shc-CK-APC"/>
+                        <segue destination="nQg-YJ-KHT" kind="show" identifier="guidingContentSegue" id="Yw5-RJ-xHH"/>
+                        <segue destination="NoC-Hg-THm" kind="show" identifier="actSegue" id="w3h-Qp-zW4"/>
+                        <segue destination="tEl-SU-RMc" kind="show" identifier="SettingsSegue" id="ijw-z5-afo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ygl-Gx-lJP" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1684.057971014493" y="-246.42857142857142"/>
+        </scene>
+        <!--BigIdea-->
+        <scene sceneID="BP1-vM-xCx">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="BigIdea" storyboardName="Engage" referencedIdentifier="BigIdea" id="YIG-6p-DpQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gmu-IX-biH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2773" y="-546"/>
+        </scene>
+        <!--Synthesis-->
+        <scene sceneID="WhV-4j-Pw5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Investigate" referencedIdentifier="Synthesis" id="dGu-8H-Z25" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3pN-nk-JFy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2790" y="-334"/>
+        </scene>
+        <!--EssentialQuestion-->
+        <scene sceneID="k97-7Q-j8w">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Engage" referencedIdentifier="EssentialQuestion" id="k72-bh-eXt" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XSv-ND-dAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2797" y="-496"/>
+        </scene>
+        <!--Challenge-->
+        <scene sceneID="9Dz-Wf-pkO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Engage" referencedIdentifier="Challenge" id="yop-Pt-B1f" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XQx-pQ-cPH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2773" y="-456"/>
+        </scene>
+        <!--GuidingContent-->
+        <scene sceneID="9H2-lB-9ro">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Investigate" referencedIdentifier="GuidingContent" id="nQg-YJ-KHT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QHi-MJ-gHM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2773" y="-232"/>
+        </scene>
+        <!--Act-->
+        <scene sceneID="h1t-PG-Ynm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Act" referencedIdentifier="Act" id="NoC-Hg-THm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yui-sO-vwE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2710" y="-149"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5aG-CY-9NK">
@@ -124,4 +179,7 @@
         <image name="appIcontela.png" width="16" height="16"/>
         <image name="home-tab" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ijw-z5-afo"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -19,6 +19,13 @@ class ListRemindersViewController: UITableViewController {
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        updateNavigationBar(backRed: 0.79, backGreen: 0.23, backBlue: 0.05, tintRed: 0.02, tintGreen: 0.43, tintBlue: 0.50, title: "Lembretes", largeTitle: true)
+//        self.navigationController?.navigationItem.setRightBarButton(item: self.navigationItem.rightBarButtonItem, animated: false)
+        self.navigationController?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(prepare))
+
+    }
     override func viewWillAppear(_ animated: Bool) {
         // call super
         super.viewWillAppear(animated)
@@ -110,7 +117,7 @@ extension ListRemindersViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        print(self.reminders)
+//        print(self.reminders)
     }
 
 }

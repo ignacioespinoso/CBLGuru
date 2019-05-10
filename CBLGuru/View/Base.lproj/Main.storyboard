@@ -10,6 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Reminders-->
+        <scene sceneID="ZAI-6z-dba">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Planner" referencedIdentifier="Reminders" id="sb2-CF-xzJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="7Fr-cU-7BM"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2zj-qK-k6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669" y="260"/>
+        </scene>
         <!--Settings-->
         <scene sceneID="UFI-2w-GPm">
             <objects>
@@ -177,6 +187,7 @@
                         <segue destination="D0a-bq-jPo" kind="relationship" relationship="viewControllers" id="5Pf-0b-O17"/>
                         <segue destination="tEl-SU-RMc" kind="relationship" relationship="viewControllers" id="z1D-Md-0eW"/>
                         <segue destination="Anm-3d-oxj" kind="relationship" relationship="viewControllers" id="Lup-E1-gn2"/>
+                        <segue destination="sb2-CF-xzJ" kind="relationship" relationship="viewControllers" id="tJa-X7-ERR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOj-M4-0UR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -189,6 +200,6 @@
         <image name="home-tab" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ijw-z5-afo"/>
+        <segue reference="z1D-Md-0eW"/>
     </inferredMetricsTieBreakers>
 </document>

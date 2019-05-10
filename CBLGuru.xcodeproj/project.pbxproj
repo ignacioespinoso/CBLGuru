@@ -14,6 +14,7 @@
 		155EB9DE2272336500BDA61B /* LinkToCBLNudge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155EB9DD2272336500BDA61B /* LinkToCBLNudge.storyboard */; };
 		155EB9E02272376700BDA61B /* LinkToNudgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155EB9DF2272376700BDA61B /* LinkToNudgeViewController.swift */; };
 		15AE6A3E226F680400E58919 /* SynthesisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AE6A3D226F680400E58919 /* SynthesisViewController.swift */; };
+		2AB8BE59228573A100A1F65A /* RemindersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB8BE58228573A100A1F65A /* RemindersTableViewCell.swift */; };
 		2AD64833228462AD00A7BE28 /* RemindersDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD64832228462AD00A7BE28 /* RemindersDAO.swift */; };
 		2AD64835228462E400A7BE28 /* RemindersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD64834228462E400A7BE28 /* RemindersData.swift */; };
 		2AD64837228462F600A7BE28 /* Planner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD64836228462F600A7BE28 /* Planner.storyboard */; };
@@ -58,6 +59,7 @@
 		155EB9DD2272336500BDA61B /* LinkToCBLNudge.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LinkToCBLNudge.storyboard; sourceTree = "<group>"; };
 		155EB9DF2272376700BDA61B /* LinkToNudgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkToNudgeViewController.swift; sourceTree = "<group>"; };
 		15AE6A3D226F680400E58919 /* SynthesisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthesisViewController.swift; sourceTree = "<group>"; };
+		2AB8BE58228573A100A1F65A /* RemindersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersTableViewCell.swift; sourceTree = "<group>"; };
 		2AD64832228462AD00A7BE28 /* RemindersDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersDAO.swift; sourceTree = "<group>"; };
 		2AD64834228462E400A7BE28 /* RemindersData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemindersData.swift; sourceTree = "<group>"; };
 		2AD64836228462F600A7BE28 /* Planner.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Planner.storyboard; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				80F1B46C22724376009D4015 /* ActController.swift */,
 				2AD6483A22846F8100A7BE28 /* AddReminderViewController.swift */,
 				2AD648402284973F00A7BE28 /* ListRemindersViewController.swift */,
+				2AB8BE58228573A100A1F65A /* RemindersTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				80C47F752268DBE3009A7EC5 /* AppDelegate.swift in Sources */,
 				80F1B46D22724376009D4015 /* ActController.swift in Sources */,
 				803C81D4226F488500704B41 /* ProjectServices.swift in Sources */,
+				2AB8BE59228573A100A1F65A /* RemindersTableViewCell.swift in Sources */,
 				80A8C823226FC82E00B8566C /* GuidingServices.swift in Sources */,
 				15413CCC2270B64100C42F71 /* GuidingTableViewCell.swift in Sources */,
 			);
@@ -500,7 +504,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B73YH55T95;
+				DEVELOPMENT_TEAM = C7CS39R779;
 				INFOPLIST_FILE = CBLGuru/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -523,7 +527,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B73YH55T95;
+				DEVELOPMENT_TEAM = C7CS39R779;
 				INFOPLIST_FILE = CBLGuru/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

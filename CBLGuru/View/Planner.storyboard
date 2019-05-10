@@ -56,22 +56,48 @@
             </objects>
             <point key="canvasLocation" x="-36" y="105"/>
         </scene>
-        <!--Title-->
+        <!--Reminders-->
         <scene sceneID="mdM-tV-K6J">
             <objects>
-                <tableViewController id="6Wl-Bt-TvJ" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QRG-qf-9Ka">
+                <tableViewController id="6Wl-Bt-TvJ" customClass="ListRemindersViewController" customModule="CBLGuru" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="QRG-qf-9Ka" userLabel="table">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="PkG-cx-H6E">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReminderCell" rowHeight="75" id="PkG-cx-H6E" customClass="RemindersTableViewCell" customModule="CBLGuru" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PkG-cx-H6E" id="CF2-nK-amM">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="74.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pje-ht-uwI">
+                                            <rect key="frame" x="20" y="39.5" width="42" height="24.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fQ-OH-19M">
+                                            <rect key="frame" x="20" y="11" width="42" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="pje-ht-uwI" firstAttribute="top" secondItem="7fQ-OH-19M" secondAttribute="bottom" constant="8" id="5FX-1s-she"/>
+                                        <constraint firstItem="pje-ht-uwI" firstAttribute="top" secondItem="7fQ-OH-19M" secondAttribute="bottom" constant="8" id="8iF-VJ-5vg"/>
+                                        <constraint firstItem="7fQ-OH-19M" firstAttribute="top" secondItem="CF2-nK-amM" secondAttribute="topMargin" id="Cou-64-R2K"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="pje-ht-uwI" secondAttribute="bottom" id="JBN-cw-xtn"/>
+                                        <constraint firstItem="7fQ-OH-19M" firstAttribute="leading" secondItem="CF2-nK-amM" secondAttribute="leadingMargin" id="emK-eN-jcY"/>
+                                        <constraint firstItem="pje-ht-uwI" firstAttribute="leading" secondItem="CF2-nK-amM" secondAttribute="leadingMargin" id="rhh-0T-rVH"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="reminderDate" destination="pje-ht-uwI" id="uIF-z1-NTd"/>
+                                    <outlet property="reminderName" destination="7fQ-OH-19M" id="uoA-JJ-iXR"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -79,25 +105,28 @@
                             <outlet property="delegate" destination="6Wl-Bt-TvJ" id="FJC-gv-iZn"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="d9z-Gp-ikF">
+                    <navigationItem key="navigationItem" title="Reminders" id="d9z-Gp-ikF">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="oXe-50-zEj">
                             <connections>
                                 <segue destination="hJY-U3-wwC" kind="show" identifier="addOrEditReminder" id="ZVT-sx-Ovh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="table" destination="QRG-qf-9Ka" id="RdC-4q-syV"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hms-pe-aYr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="893" y="-569"/>
+            <point key="canvasLocation" x="892.75362318840587" y="-569.19642857142856"/>
         </scene>
         <!--Item-->
         <scene sceneID="lCo-fR-6qJ">
             <objects>
                 <navigationController id="Em5-Gt-ou7" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="GBE-3Z-bCh"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="32e-Yx-KlZ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="32e-Yx-KlZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -135,20 +164,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Título da notificação" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z9a-dC-66a">
-                                <rect key="frame" x="8" y="96" width="398" height="30"/>
+                                <rect key="frame" x="8" y="148" width="398" height="30"/>
                                 <accessibility key="accessibilityConfiguration" label="zxc mc "/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="GyL-qv-6rP">
-                                <rect key="frame" x="47" y="134" width="320" height="216"/>
+                                <rect key="frame" x="47" y="186" width="320" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="579020664.80063295">
                                     <!--2019-05-08 15:04:24 +0000-->
                                 </date>
                             </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eo-6X-RM6">
-                                <rect key="frame" x="185.5" y="358" width="43" height="30"/>
+                                <rect key="frame" x="185.5" y="410" width="43" height="30"/>
                                 <state key="normal" title="Salvar"/>
                                 <connections>
                                     <action selector="saveReminder:" destination="hJY-U3-wwC" eventType="touchUpInside" id="RKQ-Dh-sqw"/>

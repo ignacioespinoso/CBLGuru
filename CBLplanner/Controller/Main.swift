@@ -16,6 +16,7 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
     @IBOutlet weak var icon: UIImageView!
     @IBOutlet weak var nav_toolbar: UIToolbar!
     var items : NSMutableArray = []
+    @objc var project:ProjectData?
     
     let fases: [String] = ["Big Idea", "Essential Question", "Challenge", "Guiding", "Synthesis", "Solution Concept"]
     let fasesBody: [String] = ["Big Idea é um conceito amplo que pode ser explorado de várias maneiras e é relevante para os alunos e a comunidade em geral.",
@@ -37,6 +38,7 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         navigationController?.setNavigationBarHidden(true, animated: false)
         
         switch self.carousel.currentItemIndex {
@@ -57,6 +59,7 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
         carousel.delegate = self
         carousel.dataSource = self
         underScroll.delegate = self
+       
         
     }
 
@@ -64,9 +67,41 @@ class Main: UIViewController, iCarouselDelegate, iCarouselDataSource, UICollecti
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: false)
     }
-    
-    @IBAction func hereAndBackAgain(_ segue: UIStoryboardSegue) {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
+        if (isTheFirstLaunch()) {
+            self.performSegue(withIdentifier: "settingsSegue", sender: nil)
+        }
+    }
+    
+    func isTheFirstLaunch() -> Bool {
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        if launchedBefore  {
+            return false
+        } else {
+            UserDefaults.standard.set(true, forKey: "launchedBefore")
+            return true
+        }
+    }
+    
+    @IBAction func backToHomeFromIntro(_ segue: UIStoryboardSegue) {
+        ProjectServices.getFirstProject { (error, project) in
+            if (error == nil) {
+                // assign project
+                self.project = project
+                
+                OperationQueue.main.addOperation {
+                    if(self.project?.name == nil) {
+                        self.performSegue(withIdentifier: "settingsSegue", sender: nil)
+                    }
+                }
+            }
+            else {
+                print("Unable to find first project")
+            }
+        }
     }
     
     func numberOfItems(in carousel: iCarousel) -> Int {
